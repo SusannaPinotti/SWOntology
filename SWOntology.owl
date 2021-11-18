@@ -34,6 +34,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#fightsFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#fightsFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#hasCast -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#hasCast">
@@ -119,6 +129,44 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#isGrandParentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#isGrandParentOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#isMentorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#isMentorOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#isParentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#isParentOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#isProducedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#isProducedBy">
@@ -143,6 +191,14 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#isSetIn">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#isSiblingOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#isSiblingOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -173,6 +229,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#ReleaseYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ReleaseYear"/>
     
 
 
@@ -242,6 +304,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#composer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
     </owl:Class>
     
 
@@ -336,6 +406,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#starwars -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#starwars"/>
@@ -379,6 +457,25 @@
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#year">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
