@@ -736,6 +736,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#RevengeOfTheSith -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#RevengeOfTheSith">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#SequelTrilogy -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#SequelTrilogy">
@@ -771,14 +779,6 @@
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#ThePhantomMenace -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ThePhantomMenace">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#TheReturnOfTheSith -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheReturnOfTheSith">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
     </owl:NamedIndividual>
     
