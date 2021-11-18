@@ -176,15 +176,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#aa -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#aa">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#real"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#gen -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#gen">
