@@ -481,6 +481,32 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#CarrieFisher -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#CarrieFisher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#dead"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#HarrisonFord -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#HarrisonFord">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia">
