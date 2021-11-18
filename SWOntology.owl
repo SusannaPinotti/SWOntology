@@ -110,6 +110,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#isApprenticeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#isApprenticeOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy">
