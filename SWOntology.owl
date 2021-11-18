@@ -312,6 +312,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
     </owl:Class>
     
 
