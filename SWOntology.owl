@@ -515,7 +515,6 @@
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
     </owl:NamedIndividual>
     
@@ -552,7 +551,6 @@
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
         <isSiblingOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"/>
     </owl:NamedIndividual>
