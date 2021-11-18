@@ -509,6 +509,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#ANewHope -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ANewHope">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#AlecGuinness -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#AlecGuinness">
@@ -523,6 +531,14 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#AnthonyDaniels">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
         <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#AttackOfTheClones -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#AttackOfTheClones">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
     </owl:NamedIndividual>
     
 
@@ -670,11 +686,27 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#OriginalTrilogy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#OriginalTrilogy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#trilogy"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#PeterMayhew -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#PeterMayhew">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#dead"/>
         <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#PrequelTrilogy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#PrequelTrilogy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#trilogy"/>
     </owl:NamedIndividual>
     
 
@@ -692,6 +724,70 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#RD-D2">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#machine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#ReturnOfTheJedi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ReturnOfTheJedi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#SequelTrilogy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#SequelTrilogy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#trilogy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#TheEmpireStrikesBack -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheEmpireStrikesBack">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#TheForceAwakens -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheForceAwakens">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#TheLastJedi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheLastJedi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#ThePhantomMenace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ThePhantomMenace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#TheReturnOfTheSith -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheReturnOfTheSith">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#TheRiseOfSkywalker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheRiseOfSkywalker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
     </owl:NamedIndividual>
     
 
