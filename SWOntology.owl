@@ -688,6 +688,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#BillieLourd">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <isChildOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#CarrieFisher"/>
         <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KaydelKoConnix"/>
     </owl:NamedIndividual>
     
@@ -750,7 +751,6 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#CarrieFisher">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#dead"/>
-        <isParentOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BillieLourd"/>
         <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
     </owl:NamedIndividual>
     
