@@ -591,10 +591,18 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ANewHope">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#title"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#OriginalTrilogy"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthVader"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"/>
+        <hasProductionStudios rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."/>
+        <isDirectedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#GeorgeLucas"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#GaryKurtz"/>
         <isReleasedIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#1977"/>
     </owl:NamedIndividual>
     
@@ -665,6 +673,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#AttackOfTheClones">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#title"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrequelTrilogy"/>
+        <hasProductionStudios rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."/>
+        <isDirectedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#GeorgeLucas"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RickMcCallum"/>
         <isReleasedIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#2002"/>
     </owl:NamedIndividual>
     
@@ -745,6 +757,14 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#BrianHerring">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#BryanBurk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#BryanBurk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#producer"/>
     </owl:NamedIndividual>
     
 
@@ -1516,6 +1536,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ReturnOfTheJedi">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#title"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#OriginalTrilogy"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BobaFett"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthSidious"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JabbaTheHut"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"/>
+        <hasProductionStudios rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."/>
+        <isDirectedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RichardMarquand"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HowardKazanjian"/>
         <isReleasedIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#1983"/>
     </owl:NamedIndividual>
     
@@ -1525,6 +1554,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#RevengeOfTheSith">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#title"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrequelTrilogy"/>
+        <hasProductionStudios rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."/>
+        <isDirectedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#GeorgeLucas"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RickMcCallum"/>
         <isReleasedIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#2005"/>
     </owl:NamedIndividual>
     
@@ -1639,6 +1672,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheEmpireStrikesBack">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#title"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#OriginalTrilogy"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BobaFett"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"/>
@@ -1647,6 +1681,7 @@
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LandoCalrissian"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"/>
@@ -1663,7 +1698,12 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheForceAwakens">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#title"/>
         <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#SequelTrilogy"/>
+        <hasProductionStudios rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BadRobotProductions"/>
+        <hasProductionStudios rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."/>
         <isDirectedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#J.J.Abrams"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BryanBurk"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#J.J.Abrams"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KathleenKennedy"/>
         <isReleasedIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#2015"/>
     </owl:NamedIndividual>
     
@@ -1673,6 +1713,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheLastJedi">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#title"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#SequelTrilogy"/>
+        <hasProductionStudios rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."/>
+        <isDirectedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RiaJohnson"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KathleenKennedy"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RamBergman"/>
         <isReleasedIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#2017"/>
     </owl:NamedIndividual>
     
@@ -1682,6 +1727,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ThePhantomMenace">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#title"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrequelTrilogy"/>
+        <hasProductionStudios rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."/>
+        <isDirectedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#GeorgeLucas"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RickMcCallum"/>
     </owl:NamedIndividual>
     
 
@@ -1690,7 +1739,12 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheRiseOfSkywalker">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#title"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#SequelTrilogy"/>
+        <hasProductionStudios rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BadRobotProductions"/>
+        <hasProductionStudios rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."/>
         <isDirectedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#J.J.Abrams"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KathleenKennedy"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MichelleRejwan"/>
         <isReleasedIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#2019"/>
     </owl:NamedIndividual>
     
