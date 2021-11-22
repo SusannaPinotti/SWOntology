@@ -572,6 +572,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#AdamDriver">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"/>
     </owl:NamedIndividual>
     
 
@@ -580,6 +581,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#AhmedBest">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JarJarBinks"/>
     </owl:NamedIndividual>
     
 
@@ -610,6 +612,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#AndrewSecombe">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <voices rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Watto"/>
     </owl:NamedIndividual>
     
 
@@ -618,6 +621,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#AndySerkis">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#SupremeLeaderSnoke"/>
     </owl:NamedIndividual>
     
 
@@ -665,6 +669,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#BeniciodelToro">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DJ"/>
     </owl:NamedIndividual>
     
 
@@ -744,6 +749,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ChristopherLee">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#dead"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#CountDooku"/>
     </owl:NamedIndividual>
     
 
@@ -773,6 +779,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#DaisyRidley">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Rey"/>
     </owl:NamedIndividual>
     
 
@@ -781,6 +788,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#DanielLogan">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BobaFett"/>
     </owl:NamedIndividual>
     
 
@@ -833,6 +841,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#DomhnallGleeson">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#GeneralHux"/>
     </owl:NamedIndividual>
     
 
@@ -841,6 +850,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#EwanMcGregor">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"/>
     </owl:NamedIndividual>
     
 
@@ -906,6 +916,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#GwendolineChristie">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#CaptainPhasma"/>
     </owl:NamedIndividual>
     
 
@@ -940,6 +951,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#HaydenChristensen">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinSkywalker"/>
     </owl:NamedIndividual>
     
 
@@ -993,6 +1005,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#JakeLloyd">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinSkywalker"/>
     </owl:NamedIndividual>
     
 
@@ -1031,6 +1044,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#JimmyVee">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"/>
     </owl:NamedIndividual>
     
 
@@ -1039,6 +1053,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnBoyega">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Finn"/>
     </owl:NamedIndividual>
     
 
@@ -1055,6 +1070,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#JoonasSuotamo">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"/>
     </owl:NamedIndividual>
     
 
@@ -1071,6 +1087,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#KellyMarieTran">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RoseTico"/>
     </owl:NamedIndividual>
     
 
@@ -1110,6 +1127,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#LauraDern">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Vice-AdmiralAmilynHoldo"/>
     </owl:NamedIndividual>
     
 
@@ -1118,6 +1136,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#LiamNeeson">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Qui-GonJinn"/>
     </owl:NamedIndividual>
     
 
@@ -1220,6 +1239,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#NataliePortman">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PadméAmidala"/>
     </owl:NamedIndividual>
     
 
@@ -1249,6 +1269,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#OscarIsaac">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PoeDameron"/>
     </owl:NamedIndividual>
     
 
@@ -1270,6 +1291,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#PernillaAugust">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#ShmiSkywalker"/>
     </owl:NamedIndividual>
     
 
@@ -1348,6 +1370,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#RayPark">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthMaul"/>
     </owl:NamedIndividual>
     
 
@@ -1420,6 +1443,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#SamuelL.Jackson">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MaceWindu"/>
     </owl:NamedIndividual>
     
 
@@ -1459,6 +1483,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TemueraMorrison">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JangoFett"/>
     </owl:NamedIndividual>
     
 
@@ -1642,6 +1667,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#LupitaNyong&apos;o">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MazKanata"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
