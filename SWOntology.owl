@@ -897,6 +897,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PoeDameron"/>
     </owl:NamedIndividual>
     
 
