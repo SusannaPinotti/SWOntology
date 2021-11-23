@@ -39,6 +39,16 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#composes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#composes">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#composer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#directs -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#directs">
@@ -911,7 +921,9 @@
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#D-O -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#D-O">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#machine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
     </owl:NamedIndividual>
     
 
@@ -1660,6 +1672,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#NuteGunray">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alien"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#other"/>
         <isEnemyOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PadméAmidala"/>
     </owl:NamedIndividual>
     
@@ -1756,6 +1769,7 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#PoggleTheLesser">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alien"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#other"/>
         <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#NuteGunray"/>
     </owl:NamedIndividual>
     
