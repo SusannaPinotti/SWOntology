@@ -632,6 +632,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#AcrossTheStars">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#track"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
     </owl:NamedIndividual>
     
 
@@ -650,6 +651,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Ahch-To">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#fictional"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#place"/>
+        <isSetIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Ireland-SkelligMichael"/>
     </owl:NamedIndividual>
     
 
@@ -658,6 +661,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Ahch-ToIsland">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#track"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
     </owl:NamedIndividual>
     
 
@@ -676,6 +680,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Alderaan">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#fictional"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#place"/>
+        <isSetIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Switzerland-Grindelwald"/>
     </owl:NamedIndividual>
     
 
@@ -710,6 +716,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinTheme">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#track"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
     </owl:NamedIndividual>
     
 
@@ -797,6 +804,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#BattlesOfTheHeroes">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#track"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
     </owl:NamedIndividual>
     
 
@@ -1044,6 +1052,16 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#DuelOfTheFates">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#track"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Emirates-RubAlKhali -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Emirates-RubAlKhali">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#place"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#real"/>
     </owl:NamedIndividual>
     
 
@@ -1052,6 +1070,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Endor">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#fictional"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#place"/>
+        <isSetIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#USA-DelNorteCounty"/>
     </owl:NamedIndividual>
     
 
@@ -1167,6 +1187,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSoloAndThePrincess">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#track"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
     </owl:NamedIndividual>
     
 
@@ -1222,6 +1243,15 @@
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Iceland-Eyjafjallajokull -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Iceland-Eyjafjallajokull">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#place"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#real"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Ireland-SkelligMichael -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Ireland-SkelligMichael">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#real"/>
     </owl:NamedIndividual>
     
@@ -1238,6 +1268,7 @@
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-MountEtna -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-MountEtna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#place"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#real"/>
     </owl:NamedIndividual>
     
@@ -1246,6 +1277,7 @@
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-PalaceOfCaserta -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-PalaceOfCaserta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#place"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#real"/>
     </owl:NamedIndividual>
     
@@ -1254,6 +1286,7 @@
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-VillaDelBalbianello -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-VillaDelBalbianello">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#place"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#real"/>
     </owl:NamedIndividual>
     
@@ -1296,6 +1329,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Jakku">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#fictional"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#place"/>
+        <isSetIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Emirates-RubAlKhali"/>
     </owl:NamedIndividual>
     
 
@@ -1528,6 +1563,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#LukeTheme">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#track"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
     </owl:NamedIndividual>
     
 
@@ -1549,6 +1585,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#MarchOfTheResistance">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#track"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
     </owl:NamedIndividual>
     
 
@@ -1605,14 +1642,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Mustafar">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#fictional"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Naboo -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Naboo">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#fictional"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#place"/>
+        <isSetIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-MountEtna"/>
     </owl:NamedIndividual>
     
 
@@ -1621,6 +1652,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#NabooLakeSide">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#fictional"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#place"/>
+        <isSetIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-VillaDelBalbianello"/>
     </owl:NamedIndividual>
     
 
@@ -1629,6 +1662,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#NabooRoyalPalace">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#fictional"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#place"/>
+        <isSetIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-PalaceOfCaserta"/>
     </owl:NamedIndividual>
     
 
@@ -1711,6 +1746,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ParadeOfTheEwoks">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#track"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
     </owl:NamedIndividual>
     
 
@@ -1779,6 +1815,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeiaTheme">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#track"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
     </owl:NamedIndividual>
     
 
@@ -1829,6 +1866,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#track"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
     </owl:NamedIndividual>
     
 
@@ -1837,6 +1875,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#RebelVictory">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#track"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
     </owl:NamedIndividual>
     
 
@@ -1908,6 +1947,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ReyTheme">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#track"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
     </owl:NamedIndividual>
     
 
@@ -2011,6 +2051,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#track"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
     </owl:NamedIndividual>
     
 
@@ -2019,6 +2060,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#StarkillerBase">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#fictional"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#place"/>
+        <isSetIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Iceland-Eyjafjallajokull"/>
     </owl:NamedIndividual>
     
 
@@ -2035,9 +2078,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Swizerland-Grindelwald -->
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Switzerland-Grindelwald -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Swizerland-Grindelwald">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Switzerland-Grindelwald">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#place"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#real"/>
     </owl:NamedIndividual>
     
@@ -2047,6 +2091,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Tatooine">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#fictional"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#place"/>
+        <isSetIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Tunisia-KsarHadada"/>
     </owl:NamedIndividual>
     
 
@@ -2055,6 +2101,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TatooineDesert">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#fictional"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#place"/>
+        <isSetIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#USA-DeathValley"/>
     </owl:NamedIndividual>
     
 
@@ -2073,6 +2121,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheAsteroidField">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#track"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
     </owl:NamedIndividual>
     
 
@@ -2081,6 +2130,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheBattleOfCrait">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#track"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
     </owl:NamedIndividual>
     
 
@@ -2114,6 +2164,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#track"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
     </owl:NamedIndividual>
     
 
@@ -2155,6 +2206,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheForestBattle">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#track"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
     </owl:NamedIndividual>
     
 
@@ -2163,6 +2215,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheImperialMarch">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#track"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
     </owl:NamedIndividual>
     
 
@@ -2264,6 +2317,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheRiseOfSkywalkerTheme">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#track"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
     </owl:NamedIndividual>
     
 
@@ -2272,6 +2326,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheThroneRoom">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#track"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
     </owl:NamedIndividual>
     
 
@@ -2280,6 +2335,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheTrioTheme">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#track"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
     </owl:NamedIndividual>
     
 
@@ -2297,6 +2353,7 @@
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Tunisia-KsarHadada -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Tunisia-KsarHadada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#place"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#real"/>
     </owl:NamedIndividual>
     
@@ -2305,6 +2362,7 @@
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#USA-DeathValley -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#USA-DeathValley">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#place"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#real"/>
     </owl:NamedIndividual>
     
@@ -2313,6 +2371,7 @@
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#USA-DelNorteCounty -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#USA-DelNorteCounty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#place"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#real"/>
     </owl:NamedIndividual>
     
@@ -2345,6 +2404,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#YodaTheme">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#track"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
     </owl:NamedIndividual>
     
 
