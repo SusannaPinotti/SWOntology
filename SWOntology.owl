@@ -48,7 +48,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#hasCast">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#cast"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
     </owl:ObjectProperty>
     
 
@@ -590,7 +590,7 @@
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#ANewHope -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ANewHope">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#title"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
         <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#OriginalTrilogy"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"/>
@@ -677,7 +677,7 @@
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#AttackOfTheClones -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#AttackOfTheClones">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#title"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
         <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrequelTrilogy"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinSkywalker"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BobaFett"/>
@@ -1632,7 +1632,7 @@
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#ReturnOfTheJedi -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ReturnOfTheJedi">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#title"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
         <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#OriginalTrilogy"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BobaFett"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"/>
@@ -1658,7 +1658,7 @@
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#RevengeOfTheSith -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#RevengeOfTheSith">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#title"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
         <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrequelTrilogy"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinSkywalker"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"/>
@@ -1812,7 +1812,7 @@
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#TheEmpireStrikesBack -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheEmpireStrikesBack">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#title"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
         <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#OriginalTrilogy"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BobaFett"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"/>
@@ -1837,7 +1837,7 @@
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#TheForceAwakens -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheForceAwakens">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#title"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
         <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#SequelTrilogy"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BB-8"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"/>
@@ -1870,7 +1870,7 @@
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#TheLastJedi -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheLastJedi">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#title"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
         <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#SequelTrilogy"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BB-8"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"/>
@@ -1902,7 +1902,7 @@
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#ThePhantomMenace -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ThePhantomMenace">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#title"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
         <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrequelTrilogy"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinSkywalker"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"/>
@@ -1927,7 +1927,7 @@
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#TheRiseOfSkywalker -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheRiseOfSkywalker">
-        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#title"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
         <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#SequelTrilogy"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BB-8"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BabuFrik"/>
