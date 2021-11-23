@@ -840,6 +840,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#CantinaBand -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#CantinaBand">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#CaptainPhasma -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#CaptainPhasma">
@@ -1673,6 +1682,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#OriginalTrilogy">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#trilogy"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#ANewHope"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#ReturnOfTheJedi"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheEmpireStrikesBack"/>
     </owl:NamedIndividual>
     
 
@@ -1753,6 +1765,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#PrequelTrilogy">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#trilogy"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AttackOfTheClones"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RevengeOfTheSith"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#ThePhantomMenace"/>
     </owl:NamedIndividual>
     
 
@@ -1977,6 +1992,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#SequelTrilogy">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#trilogy"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheForceAwakens"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheLastJedi"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheRiseOfSkywalker"/>
     </owl:NamedIndividual>
     
 
