@@ -605,6 +605,12 @@
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeiaTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RebelVictory"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheThroneRoom"/>
         <hasProductionStudios rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."/>
         <isDirectedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#GeorgeLucas"/>
         <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#GaryKurtz"/>
@@ -981,6 +987,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#DarkSideTheme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#DarkSideTheme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#DarthMaul -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthMaul">
@@ -1050,6 +1065,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#DroidInvasionMarch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#DroidInvasionMarch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#DuelOfTheFates -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#DuelOfTheFates">
@@ -1064,6 +1088,15 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Emirates-RubAlKhali">
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#place"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#real"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#EmperorTheme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#EmperorTheme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
     </owl:NamedIndividual>
     
 
@@ -1477,6 +1510,15 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
         <isNephewOrNieceOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRenFanfare -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRenFanfare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
     </owl:NamedIndividual>
     
 
@@ -1922,6 +1964,16 @@
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSoloAndThePrincess"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#ParadeOfTheEwoks"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeiaTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheForestBattle"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheImperialMarch"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#YodaTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Luke&amp;Leia"/>
         <hasProductionStudios rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."/>
         <isDirectedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RichardMarquand"/>
         <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HowardKazanjian"/>
@@ -2212,6 +2264,16 @@
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"/>
         <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarkSideTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSoloAndThePrincess"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeiaTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RebelVictory"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheAsteroidField"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheImperialMarch"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#YodaTheme"/>
         <hasProductionStudios rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."/>
         <isDirectedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#IrvinKershner"/>
         <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#GaryKurtz"/>
