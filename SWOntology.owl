@@ -387,6 +387,7 @@ The ontology is dedicated to the star wars franchise and it was created by Susan
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#machine"/>
+        <rdfs:comment>Characters that are under the category &quot;alien&quot;</rdfs:comment>
     </owl:Class>
     
 
@@ -411,6 +412,7 @@ The ontology is dedicated to the star wars franchise and it was created by Susan
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#character">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+        <rdfs:comment>The most significant characters in every movie</rdfs:comment>
     </owl:Class>
     
 
@@ -429,6 +431,7 @@ The ontology is dedicated to the star wars franchise and it was created by Susan
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#other"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <rdfs:comment>Characters that believe in the Dark Side cause.</rdfs:comment>
     </owl:Class>
     
 
@@ -437,6 +440,7 @@ The ontology is dedicated to the star wars franchise and it was created by Susan
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#dead">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdfs:comment>Actors who have passed</rdfs:comment>
     </owl:Class>
     
 
@@ -462,6 +466,7 @@ The ontology is dedicated to the star wars franchise and it was created by Susan
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#genre">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#starwars"/>
+        <rdfs:comment>The genre of the movies</rdfs:comment>
     </owl:Class>
     
 
@@ -471,6 +476,7 @@ The ontology is dedicated to the star wars franchise and it was created by Susan
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#human">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#machine"/>
+        <rdfs:comment>Characters that are human</rdfs:comment>
     </owl:Class>
     
 
@@ -479,6 +485,7 @@ The ontology is dedicated to the star wars franchise and it was created by Susan
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#machine">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdfs:comment>Characters that are machines</rdfs:comment>
     </owl:Class>
     
 
@@ -495,6 +502,7 @@ The ontology is dedicated to the star wars franchise and it was created by Susan
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#music">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+        <rdfs:comment>Star Wars main soundtracks</rdfs:comment>
     </owl:Class>
     
 
@@ -504,6 +512,7 @@ The ontology is dedicated to the star wars franchise and it was created by Susan
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#other">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <rdfs:comment>Characters that are neutral</rdfs:comment>
     </owl:Class>
     
 
@@ -536,6 +545,7 @@ The ontology is dedicated to the star wars franchise and it was created by Susan
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdfs:comment>Characters that believe in the Light Side cause.</rdfs:comment>
     </owl:Class>
     
 
@@ -2785,6 +2795,23 @@ The ontology is dedicated to the star wars franchise and it was created by Susan
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
         <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MazKanata"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#alive">
+        <rdfs:comment>Actors who are still alive</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#year">
+        <rdfs:comment>Years in which the movies were realeased</rdfs:comment>
+    </rdf:Description>
 </rdf:RDF>
 
 
