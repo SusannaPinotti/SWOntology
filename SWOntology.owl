@@ -3,12 +3,32 @@
      xml:base="http://www.semanticweb.org/ontologies/2021/SWOntology"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:swo="http://www.semanticweb.org/ontologies/2021/SWOntology#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/">
     <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology">
+        <vann:preferredNamespacePrefix>swo</vann:preferredNamespacePrefix>
         <rdfs:comment>This ontology is dedicated to the Star Wars franchise and it was created by Susanna Pinotti and Valentina Cozzi, two Digital Humanities and Digital Knowledge students at the university of Bologna.</rdfs:comment>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
     
 
 
