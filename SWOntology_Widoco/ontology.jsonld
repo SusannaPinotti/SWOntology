@@ -1,0 +1,2595 @@
+[ {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "swo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This ontology is dedicated to the Star Wars franchise and it was created by Susanna Pinotti and Valentina Cozzi, two Digital Humanities and Digital Knowledge students at the university of Bologna."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#1977",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#year" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#1980",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#year" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#1983",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#year" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#1999",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#year" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#2002",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#year" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#2005",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#year" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#2015",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#year" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#2017",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#year" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isReleasedIn" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#1999"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#2019",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#year" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ANewHope",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#movie" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#OriginalTrilogy"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasCast" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AlecGuinness"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AnthonyDaniels"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#CarrieFisher"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DavidProwse"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HarrisonFord"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KennyBaker"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MarkHamill"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PeterMayhew"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasCharacter" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarthVader"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasMusic" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeiaTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RebelVictory"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheThroneRoom"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasProductionStudios" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isDirectedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#GeorgeLucas"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isProducedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#GaryKurtz"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isReleasedIn" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#1977"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isSetIn" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#USA-DeathValley"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AcrossTheStars",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AdamDriver",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Ahch-To",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#fictional" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Ahch-ToIsland",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AhmedBest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JarJarBinks"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Alderaan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#fictional" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AlecGuinness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#dead" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinSkywalker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#human" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasRomanticRelationWith" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PadméAmidala"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isApprenticeOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isGrandParentOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isParentOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinTheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AndySerkis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#SupremeLeaderSnoke"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AnthonyDaniels",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AttackOfTheClones",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#movie" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrequelTrilogy"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasCast" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AhmedBest"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AnthonyDaniels"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ChristopherLee"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DanielLogan"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ErnieFosselius"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#EwanMcGregor"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#FrankOz"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HaydenChristensen"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#IanMcDiarmid"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KennyBaker"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#NataliePortman"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PernillaAugust"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#SamuelL.Jackson"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#SilasCarson"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TemueraMorrison"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasCharacter" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinSkywalker"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BobaFett"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#CountDooku"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarthSidious"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JangoFett"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JarJarBinks"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MaceWindu"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#NuteGunray"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PadméAmidala"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PoggleTheLesser"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ShmiSkywalker"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasMusic" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AcrossTheStars"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DroidInvasionMarch"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DuelOfTheFates"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#EmperorTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheImperialMarch"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasProductionStudios" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isDirectedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#GeorgeLucas"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isProducedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RickMcCallum"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isReleasedIn" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#2002"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isSetIn" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-PalaceOfCaserta"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-VillaDelBalbianello"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BB-8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#machine", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Finn"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PoeDameron"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Rey"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BabuFrik",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#alien", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BadRobotProductions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#studios" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BattleOfTheHeroes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BeniciodelToro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DJ"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BillieLourd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isChildOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#CarrieFisher"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KaydelKoConnix"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BillyDeeWilliams",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LandoCalrissian"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BobaFett",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#human", "http://www.semanticweb.org/ontologies/2021/SWOntology#other" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isEnemyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BrianHerring",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BB-8"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BryanBurk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#producer" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#machine", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#CantinaBand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#CaptainPhasma",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide", "http://www.semanticweb.org/ontologies/2021/SWOntology#human" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isEnemyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Finn"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#CarrieFisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#dead" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#alien", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Finn"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MazKanata"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Rey"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ChristopherLee",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#dead" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#CountDooku"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#CountDooku",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide", "http://www.semanticweb.org/ontologies/2021/SWOntology#human" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isApprenticeOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarthSidious"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#D-O",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#machine", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DJ",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#human", "http://www.semanticweb.org/ontologies/2021/SWOntology#other" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DaisyRidley",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Rey"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DanielLogan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BobaFett"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarkSideTheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarthMaul",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#alien", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isApprenticeOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarthSidious"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isEnemyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Qui-GonJinn"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarthSidious",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide", "http://www.semanticweb.org/ontologies/2021/SWOntology#human" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isGrandParentOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Rey"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isMentorOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarthVader"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarthVader",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide", "http://www.semanticweb.org/ontologies/2021/SWOntology#human" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isChildOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ShmiSkywalker"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isGrandParentOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isParentOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DaveChapman",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BB-8"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DavidProwse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#dead" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarthVader"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DomhnallGleeson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#GeneralHux"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DroidInvasionMarch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DuelOfTheFates",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Emirates-RubAlKhali",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#real" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#stages" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Jakku"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#EmperorTheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Endor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#fictional" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ErnieFosselius",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#voices" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PoggleTheLesser"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#EwanMcGregor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Finn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#human", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PoeDameron"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Rey"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#FrankOz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#voices" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#GaryKurtz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#producer" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#GeneralGrievous",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide", "http://www.semanticweb.org/ontologies/2021/SWOntology#machine" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isApprenticeOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarthSidious"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isEnemyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#GeneralHux",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide", "http://www.semanticweb.org/ontologies/2021/SWOntology#human" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isEnemyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#GeorgeLucas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#director" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#GwendolineChristie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#CaptainPhasma"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#human", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasRomanticRelationWith" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LandoCalrissian"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MazKanata"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isParentOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HanSoloAndThePrincess",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HarrisonFord",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HassanTaj",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HaydenChristensen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinSkywalker"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Hoth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#fictional" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HowardKazanjian",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#producer" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#IanMcDiarmid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarthSidious"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Iceland-Eyjafjallajokull",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#real" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#stages" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#StarkillerBase"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Ireland-SkelligMichael",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#real" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#stages" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Ahch-To"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#IrvinKershner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#director" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-MountEtna",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#real" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#stages" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Mustafar"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-PalaceOfCaserta",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#real" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#stages" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#NabooRoyalPalace"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-VillaDelBalbianello",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#real" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#stages" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#NabooLakeSide"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#J.J.Abrams",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#director", "http://www.semanticweb.org/ontologies/2021/SWOntology#producer" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#D-O"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JabbaTheHut",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#alien", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#other" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isEnemyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BobaFett"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JakeLloyd",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinSkywalker"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Jakku",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#fictional" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JangoFett",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#human", "http://www.semanticweb.org/ontologies/2021/SWOntology#other" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isEnemyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isParentOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BobaFett"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Jannah",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#human", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Finn"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JarJarBinks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#alien", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PadméAmidala"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Qui-GonJinn"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JeremyBulloch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#dead" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BobaFett"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JimmyVee",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnBoyega",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Finn"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#composer" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JoonasSuotamo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KathleenKennedy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#producer" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KaydelKoConnix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#human", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KellyMarieTran",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RoseTico"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KennyBaker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#dead" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KeriRussel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ZoriiBliss"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide", "http://www.semanticweb.org/ontologies/2021/SWOntology#human" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isNephewOrNieceOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRenFanfare",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LandoCalrissian",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#human", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LauraDern",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Vice-AdmiralAmilynHoldo"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LeeTowersey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LiamNeeson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Qui-GonJinn"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LorSanTekka",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#human", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PoeDameron"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd.",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#studios" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Luke&Leia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#human", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isApprenticeOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isChildOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarthVader"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isMentorOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Rey"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isSiblingOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LukeTheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LupitaNyong'o",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MazKanata"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MaceWindu",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#human", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Qui-GonJinn"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MarchOfTheResistance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MarkHamill",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MatthewWood",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#GeneralGrievous"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MaxvonSydow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#dead" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MazKanata",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#alien", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MichelleRejwan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#producer" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Mustafar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#fictional" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#NabooLakeSide",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#fictional" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#NabooRoyalPalace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#fictional" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#NaomiAckie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Jannah"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#NataliePortman",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PadméAmidala"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Norway-Hardangerjokulen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#real" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#stages" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Hoth"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#NuteGunray",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#alien", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#other" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isEnemyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PadméAmidala"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#human", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isMentorOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#OriginalTrilogy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#trilogy" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#composedOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ANewHope"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ReturnOfTheJedi"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheEmpireStrikesBack"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#OscarIsaac",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PoeDameron"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PadméAmidala",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#human", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isGrandParentOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isParentOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ParadeOfTheEwoks",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PernillaAugust",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ShmiSkywalker"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PeterMayhew",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#dead" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PoeDameron",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#human", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PoggleTheLesser",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#alien", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#other" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#NuteGunray"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrequelTrilogy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#trilogy" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#composedOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AttackOfTheClones"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RevengeOfTheSith"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ThePhantomMenace"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#human", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isParentOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isSiblingOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeiaTheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Qui-GonJinn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#human", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isMentorOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#machine", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BB-8"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RamBergman",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#producer" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RayPark",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarthMaul"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RebelVictory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ReturnOfTheJedi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#movie" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#OriginalTrilogy"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasCast" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AlecGuinness"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AnthonyDaniels"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BillyDeeWilliams"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#CarrieFisher"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DavidProwse"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#FrankOz"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HarrisonFord"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#IanMcDiarmid"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JeremyBulloch"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KennyBaker"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MarkHamill"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PeterMayhew"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#SebastianShaw"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ThomasDeclanMulholland"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasCharacter" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BobaFett"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarthSidious"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarthVader"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JabbaTheHut"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LandoCalrissian"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasMusic" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#EmperorTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HanSoloAndThePrincess"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ParadeOfTheEwoks"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeiaTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheForestBattle"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheImperialMarch"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#YodaTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Luke&Leia"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasProductionStudios" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isDirectedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RichardMarquand"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isProducedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HowardKazanjian"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isReleasedIn" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#1983"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isSetIn" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#USA-DelNorteCounty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RevengeOfTheSith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#movie" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrequelTrilogy"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasCast" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AhmedBest"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AnthonyDaniels"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ChristopherLee"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ErnieFosselius"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#EwanMcGregor"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#FrankOz"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HaydenChristensen"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#IanMcDiarmid"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KennyBaker"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MatthewWood"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#NataliePortman"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#SamuelL.Jackson"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#SilasCarson"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasCharacter" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinSkywalker"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#CountDooku"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarthSidious"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#GeneralGrievous"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JarJarBinks"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MaceWindu"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#NuteGunray"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PadméAmidala"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PoggleTheLesser"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasMusic" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AcrossTheStars"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BattleOfTheHeroes"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarkSideTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DroidInvasionMarch"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DuelOfTheFates"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#EmperorTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeiaTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheImperialMarch"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasProductionStudios" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isDirectedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#GeorgeLucas"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isProducedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RickMcCallum"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isReleasedIn" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#2005"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isSetIn" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-MountEtna"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Switzerland-Grindelwald"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Rey",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#human", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasRomanticRelationWith" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ReyTheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RiaJohnson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#director" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RichardMarquand",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#director" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RickMcCallum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#producer" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RoseTico",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#human", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Finn"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#SamuelL.Jackson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MaceWindu"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ScienceFiction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#genre" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#SebastianShaw",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#dead" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarthVader"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#SequelTrilogy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#trilogy" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#composedOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheForceAwakens"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheLastJedi"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheRiseOfSkywalker"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ShirleyHenderson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#voices" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BabuFrik"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ShmiSkywalker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#human" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isGrandParentOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isParentOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinSkywalker"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#SilasCarson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#NuteGunray"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#StarkillerBase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#fictional" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#SupremeLeaderSnoke",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#alien", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isEnemyOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Rey"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isMentorOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Switzerland-Grindelwald",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#real" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#stages" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Alderaan"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Tatooine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#fictional" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TatooineDesert",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#fictional" ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TemueraMorrison",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#alive" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JangoFett"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheAsteroidField",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheBattleOfCrait",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheEmpireStrikesBack",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#movie" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#OriginalTrilogy"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasCast" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AlecGuinness"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AnthonyDaniels"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BillyDeeWilliams"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#CarrieFisher"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DavidProwse"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#FrankOz"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HarrisonFord"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#IanMcDiarmid"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JeremyBulloch"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KennyBaker"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MarkHamill"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PeterMayhew"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasCharacter" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BobaFett"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarthSidious"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarthVader"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LandoCalrissian"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasMusic" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarkSideTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HanSoloAndThePrincess"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeiaTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RebelVictory"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheAsteroidField"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheImperialMarch"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#YodaTheme"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasProductionStudios" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isDirectedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#IrvinKershner"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isProducedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#GaryKurtz"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isReleasedIn" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#1980"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isSetIn" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Norway-Hardangerjokulen"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheForceAwakens",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#movie" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#SequelTrilogy"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasCast" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AdamDriver"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AndySerkis"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AnthonyDaniels"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BillieLourd"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BrianHerring"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#CarrieFisher"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DaisyRidley"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DaveChapman"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DomhnallGleeson"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#GwendolineChristie"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HarrisonFord"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnBoyega"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KennyBaker"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MarkHamill"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MaxvonSydow"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#OscarIsaac"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PeterMayhew"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LupitaNyong'o"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasCharacter" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BB-8"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#CaptainPhasma"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Finn"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#GeneralHux"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KaydelKoConnix"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LorSanTekka"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MazKanata"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PoeDameron"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Rey"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#SupremeLeaderSnoke"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasMusic" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HanSoloAndThePrincess"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRenFanfare"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MarchOfTheResistance"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeiaTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ReyTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheImperialMarch"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasProductionStudios" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BadRobotProductions"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isDirectedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#J.J.Abrams"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isProducedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BryanBurk"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#J.J.Abrams"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KathleenKennedy"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isReleasedIn" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#2015"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isSetIn" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Emirates-RubAlKhali"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Iceland-Eyjafjallajokull"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Ireland-SkelligMichael"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheForestBattle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheImperialMarch",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheLastJedi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#movie" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#SequelTrilogy"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasCast" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AdamDriver"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AndySerkis"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AnthonyDaniels"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BeniciodelToro"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BillieLourd"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BrianHerring"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#CarrieFisher"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DaisyRidley"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DaveChapman"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DomhnallGleeson"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#GwendolineChristie"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JimmyVee"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnBoyega"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JoonasSuotamo"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KellyMarieTran"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LauraDern"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MarkHamill"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#OscarIsaac"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LupitaNyong'o"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasCharacter" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BB-8"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#CaptainPhasma"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DJ"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Finn"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#GeneralHux"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KaydelKoConnix"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MazKanata"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PoeDameron"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Rey"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RoseTico"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#SupremeLeaderSnoke"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Vice-AdmiralAmilynHoldo"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasMusic" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Ahch-ToIsland"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#EmperorTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HanSoloAndThePrincess"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRenFanfare"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeiaTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ReyTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheBattleOfCrait"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheImperialMarch"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#YodaTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Luke&Leia"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasProductionStudios" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isDirectedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RiaJohnson"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isProducedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KathleenKennedy"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RamBergman"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isReleasedIn" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#2017"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isSetIn" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Ireland-SkelligMichael"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ThePhantomMenace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#movie" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrequelTrilogy"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasCast" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AhmedBest"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AnthonyDaniels"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#EwanMcGregor"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#FrankOz"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#IanMcDiarmid"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JakeLloyd"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KennyBaker"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LiamNeeson"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#NataliePortman"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PernillaAugust"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RayPark"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#SamuelL.Jackson"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#SilasCarson"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasCharacter" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinSkywalker"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarthMaul"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarthSidious"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JarJarBinks"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MaceWindu"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#NuteGunray"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PadméAmidala"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Qui-GonJinn"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ShmiSkywalker"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasMusic" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DroidInvasionMarch"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DuelOfTheFates"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#EmperorTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheImperialMarch"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#YodaTheme"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasProductionStudios" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isDirectedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#GeorgeLucas"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isProducedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RickMcCallum"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isSetIn" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-PalaceOfCaserta"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Tunisia-KsarHadada"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheRiseOfSkywalker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#movie" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#SequelTrilogy"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasCast" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AdamDriver"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#AnthonyDaniels"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BillieLourd"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BillyDeeWilliams"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BrianHerring"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#CarrieFisher"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DaisyRidley"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DaveChapman"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DomhnallGleeson"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HarrisonFord"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HassanTaj"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#IanMcDiarmid"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#J.J.Abrams"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnBoyega"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JoonasSuotamo"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KellyMarieTran"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KeriRussel"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LeeTowersey"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MarkHamill"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#NaomiAckie"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#OscarIsaac"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ShirleyHenderson"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LupitaNyong'o"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasCharacter" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BB-8"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BabuFrik"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#D-O"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarthSidious"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Finn"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#GeneralHux"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Jannah"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KaydelKoConnix"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LandoCalrissian"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MazKanata"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PoeDameron"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Rey"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RoseTico"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ZoriiBliss"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasMusic" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#DarkSideTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#EmperorTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#HanSoloAndThePrincess"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRenFanfare"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MarchOfTheResistance"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeiaTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ReyTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheImperialMarch"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheRiseOfSkywalkerTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheTrioTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#YodaTheme"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Luke&Leia"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#hasProductionStudios" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#BadRobotProductions"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isDirectedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#J.J.Abrams"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isProducedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#KathleenKennedy"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#MichelleRejwan"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isReleasedIn" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#2019"
+  } ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isSetIn" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Ireland-SkelligMichael"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheRiseOfSkywalkerTheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheThroneRoom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TheTrioTheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ThomasDeclanMulholland",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#actor", "http://www.semanticweb.org/ontologies/2021/SWOntology#dead" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#plays" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JabbaTheHut"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Tunisia-KsarHadada",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#real" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#stages" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Tatooine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#USA-DeathValley",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#real" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#stages" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#TatooineDesert"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#USA-DelNorteCounty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#real" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#stages" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Endor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Vice-AdmiralAmilynHoldo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#human", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#alien", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isMentorOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#CountDooku"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#YodaTheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#music" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#ZoriiBliss",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/ontologies/2021/SWOntology#character", "http://www.semanticweb.org/ontologies/2021/SWOntology#human", "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance" ],
+  "http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#PoeDameron"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#actor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#cast"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#alien",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Characters that are under the category \"alien\""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#human"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#machine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#alive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Actors who are still alive"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#alive"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#belongsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#movie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#trilogy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#cast",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#movie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The most significant characters in every movie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#movie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#composedOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#trilogy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#movie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#composer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#music"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#composes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#composer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#music"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Characters that believe in the Dark Side cause."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#other"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#dead",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Actors who have passed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#director",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#movie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#directs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#director"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#movie"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#isDirectedBy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#fictional",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#place"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#real"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#gen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#genre"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#genre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The genre of the movies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#starwars"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#hasCast",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#movie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#hasCharacter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#movie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#hasGenre",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#starwars"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#genre"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#hasMusic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#movie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#music"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#hasProductionStudios",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#movie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#studios"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#hasRomanticRelationWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#hasTitle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#movie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#title"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#human",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Characters that are human"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#machine"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#isApprenticeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#isMentorOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#isChildOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#isParentOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#music"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#composer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#isDirectedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#movie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#director"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#isEnemyOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#isGrandChildOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#isGrandParentOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#isGrandParentOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#isMentorOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#isNephewOrNieceOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#isUncleOrAuntOf"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#isParentOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#isProducedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#movie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#producer"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#produces"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#isReleasedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#movie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#year"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#isSetIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#movie"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#place"
+  }, {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#real"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#isSiblingOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#isUncleOrAuntOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#machine",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Characters that are machines"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#movie",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#trilogy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#music",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Star Wars main soundtracks"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#movie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#other",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Characters that are neutral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#place",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#movie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#plays",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#producer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#movie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#produces",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#producer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#movie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#real",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#place"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Characters that believe in the Light Side cause."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#stages",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#real"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#fictional"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#starwars",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Star Wars is an American science fiction franchise created by George Lucas, which began with the eponymous 1977 film and quickly became a worldwide pop-culture phenomenon."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#studios",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#movie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#movie"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#trilogy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The original film (Star Wars), retroactively subtitled Episode IV: A New Hope (1977), was followed by the sequels Episode V: The Empire Strikes Back (1980) and Episode VI: Return of the Jedi (1983), forming the original Star Wars trilogy. Lucas later returned to filmmaking to direct a prequel trilogy, consisting of Episode I: The Phantom Menace (1999), Episode II: Attack of the Clones (2002), and Episode III: Revenge of the Sith (2005). In 2012, Lucas sold his production company to Disney, relinquishing his ownership of the franchise. This led to a sequel trilogy, consisting of Episode VII: The Force Awakens (2015), Episode VIII: The Last Jedi (2017), and Episode IX: The Rise of Skywalker (2019)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#starwars"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#voices",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#character"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#year",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Years in which the movies were realeased"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#year"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#movie"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#starwars"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/ontologies/2021/SWOntology#genre"
+  } ]
+} ]
