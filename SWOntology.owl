@@ -360,11 +360,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#alive -->
+    <!-- http://purl.org/vocab/vann/releaseYear -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#alive">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/vocab/vann/releaseYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#year"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
@@ -374,15 +374,6 @@
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#gen">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#genre"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#year -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#year">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#year"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
@@ -578,6 +569,7 @@
     <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#starwars -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#starwars">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:comment>Star Wars is an American science fiction franchise created by George Lucas, which began with the eponymous 1977 film and quickly became a worldwide pop-culture phenomenon.</rdfs:comment>
     </owl:Class>
     
@@ -2835,23 +2827,6 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
         <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MazKanata"/>
     </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#alive">
-        <rdfs:comment>Actors who are still alive</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#year">
-        <rdfs:comment>Years in which the movies were realeased</rdfs:comment>
-    </rdf:Description>
 </rdf:RDF>
 
 
