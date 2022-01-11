@@ -33,28 +33,28 @@
 						<a href="#project" class="image icon solid fas fa-jedi"><img src="images/swbackground.jpg" alt="" /></a>
 						<div class="content">
 							<h3>The Project</h3>
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
+							<p>Our goals and inspirations</p>
 						</div>
 					</section>
 					<section class="feature right">
 						<a href="#ontology" class="image icon solid fas fa-project-diagram"><img src="images/tatooine.jpg" alt="" /></a>
 						<div class="content">
 							<h3>The Ontology</h3>
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
+							<p>A model for understanding the (Star Wars) universe</p>
 						</div>
 					</section>
 					<section class="feature left">
 						<a href="#linguistic" class="image icon solid fas fa-chart-pie"><img src="images/originaltrilogyback.jpg" alt="" /></a>
 						<div class="content">
 							<h3>The Linguistic Analysis</h3>
-							<p>A deep dive in the linguistic features which can visually help framing the narrative and provide useful insights. This includes word clouds and a sentiment analysis of characters.</p>
+							<p>Frame the narrative with some data</p>
 						</div>
 					</section>
 					<section class="feature right">
 						<a href="#query" class="image icon solid fas fa-question"><img src="images/lightspeed1.jpg" alt="" /></a>
 						<div class="content">
 							<h3>SPARQL Queries</h3>
-							<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
+							<p>Get some knowledge out of it</p>
 						</div>
 					</section>
 				</div>
@@ -110,7 +110,7 @@
 							via the easily graspable <b>word cloud</b>. Each movie script has been stripped of some 
 							useless words (besides regular English stopwords), and then turned into the visualisation. 
 							The brief code for this can be found on this <a href="https://colab.research.google.com/drive/1p0_YhfoT-CIWhLJiDeNvb0ypLLWl6QwD?usp=sharing">Colab notebook</a>. </p>
-							<p>The results are shown here: the first image is relative to the whole trilogy, while the others
+							<p>The results are shown here: the first image relates to the whole trilogy, while the others
 								are the wordcloud of each specific episode.
 							</p>
 							<h4>Full trilogy word cloud</h4>
@@ -172,18 +172,20 @@
 									<li>-0.05 < C.S < 0.05 Neutral  </li>
 									<li>C.S <= -0.05 Negative </li>	
 								</ul></p>
-								<p>To keep this brief, we present some of the results we obtained from our analysis, but the colab file can be used to perform as many as one wishes. </p>
+								<p>To keep this brief, we present some of the results we obtained from our analysis, but the colab file can be used to perform as many as one wishes.
+								This is especially useful if the user wants to dig deep in the linguistic role each character plays inside the movie, or to perform some computationally aided
+							screenplay examination. </p>
 								<h4>C3P0's Sentiment</h4> 
 								<img src="images\character plots\3p0Scores.PNG" style="width: 55vw; min-width: 330px;">
 								<br>
-								<h4>Vader's Sentiment
+								<h4>Lord Vader's Sentiment
 								</h4> 								
 								<img src="images\character plots\vaderScore.PNG" style="width: 55vw; min-width: 330px;">
 								<br>
-								<h4>Luke's Sentiment</h4> 
+								<h4>Luke Skywalker's Sentiment</h4> 
 								<img src="images\character plots\LukePositive.PNG"style="width: 55vw; min-width: 330px;" >
 								<br>
-								<h4>Emperor's Sentiment</h4>
+								<h4>Emperor Palpatine's Sentiment</h4>
 								<img src="images\character plots\EmperorScore.PNG" style="width: 55vw; min-width: 330px;" >
 
 					</section>
@@ -194,6 +196,65 @@
 						</header>
 						<p>SPARQL is a querying language specifically developed for extracting knowledge from RDF datasets and is a fundamental asset in the semantic web architecture. </p>
 						<p>Here are some query we were able to solve on our knowledge graph. </p>
+						<ul class="default">
+							<li> <b>Whic actor/actors portray Chewbecca and in which movie does the character appear?</b> </li>
+							<code>
+								SELECT ?movie ?actor
+									WHERE { ?movie swo:hasCast ?actor.
+									?actor swo:plays swo:Chewbecca
+									}
+								</code>
+							<li> <b>Which characters are aliens in the rebel alliance?</b> </li>
+							<code>SELECT ?character 
+								WHERE {?character ?p swo:alien. 
+								?character ?p swo:rebelAlliance
+								}
+							</code>
+							<li> <b>In which movies is the actress Carrie Fisher in?</b> </li>
+							<code>SELECT ?movie 
+								WHERE { ?movie swo:hasCast swo:CarrieFisher
+								}
+							</code>
+							<li> <b>Which are the enemies of Han Solo?</b> </li>
+							<code>SELECT ?character
+								WHERE {?character swo:isEnemyOf swo:HanSolo. 
+								}
+							</code>
+							<li> <b>Who is Kylo Ren mentor and in which movies they appear together?</b> </li>
+							<code>SELECT ?mentor ?movie
+								WHERE {?movie swo:hasCharacter ?mentor. 
+								?movie swo:hasCharacter swo:KyloRen. 
+								?mentor swo:isMentorOf swo:KyloRen
+								}
+							</code>
+							<li> <b>Are there romantic relations in the movie 'Attack Of the clones?'</b> </li>
+							<code>SELECT ?character1 ?character2
+								WHERE {swo:AttackOfTheClones swo:hasCharacter ?character1. 
+								swo:AttackOfTheClones swo:hasCharacter ?character2. 
+								?character1 swo:hasRomanticRelationWith ?character2
+								}
+							</code>
+							<li> <b>Return all romantic relations in the saga</b> </li>
+							<code>SELECT ?c1 ?c2 ?movie
+								WHERE {?c1 swo:hasRomanticRelationWith ?c2. 
+								?movie swo:hasCharacter ?c1. 
+								?movie swo:hasCharacter ?c2
+								}
+							</code>
+							<li> <b>To which trilogy the movies belong and in what year they were released?</b> </li>
+							<code>SELECT ?trilogy ?movie ?year
+								WHERE {?trilogy swo:composedOf ?movie.
+								?movie swo:isReleasedIn ?year
+								}
+							</code>
+							<li> <b>Who is both a producer and an actor in the saga?</b> </li>
+							<code>SELECT ?person ?movie
+								WHERE {?person ?p swo:director. 
+								?movie swo:hasCast ?person
+								}
+							</code>
+									<!--
+						</ul>
 					</section>
 					<section>
 						<header>
@@ -297,26 +358,24 @@
 								</div>
 							</div>
 						</form>
-					</section>
+					</section> -->
 					-->
 				</div>
 				<!-- end of additional section-->
 
 				<footer class="major container medium">
 					<h3>MEET THE PADAWANS</h3>
-					<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
-					
 					<!--kind ugly but could work -->
 					<div class="box alt container">
 						<section class="feature left">
-							<a href="#" class="image icon" id="susi"><img src="images/swbackground.jpg" alt="" /></a>
+							<a href="#" class="image icon" id="susi"><img src="images\Susanna.jpg" style="width: 25vw; min-width: 330px;"  /></a>
 							<div class="content">
 								<h3>SUSANNA PINOTTI</h3>
-								<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus.</p>
+								<p>DHDK student, Linguistics nerd. Currently catching up with the Star Wars saga.</p>
 									<ul class="icons">
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="https://www.instagram.com/sushita_allegria/" class="icon brands fa-github"><span class="label">Github</span></a></li>
+										<li><a href="https://www.facebook.com/susanna.pinotti" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="https://github.com/SusannaPinotti" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 									</ul>
 							</div>
 						</section>
