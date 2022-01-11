@@ -106,37 +106,86 @@
 						</header>
 						<p>We decided to widen the perspective on our topic by providing some quantitative linguistic insights. 
 							For the purposes of this project, we analysed the movie scripts belonging to the Original Trilogy, 
-							but the same kind of analysis could be performed on a wider set of texts. <br> The first analysis is a simple wordcount, 
-							then presented under the visually pleasing and easily grasped form of a word cloud. Each movie script has been stripped of some 
+							but the same kind of analysis could be performed on a wider set of texts. <br> The first analysis is a simple word count visualization, 
+							via the easily graspable word cloud. Each movie script has been stripped of some 
 							useless words (besides regular English stopwords), and then turned into the visualisation. 
 							The brief code for this can be found on this <a href="https://colab.research.google.com/drive/1p0_YhfoT-CIWhLJiDeNvb0ypLLWl6QwD">Colab</a> 
 							notebook. </p>
-							<p>The results are shown here: the first image is relative to the whole trilogy, while the other three
-								are the wordcloud of each specific movie.
+							<p>The results are shown here: the first image is relative to the whole trilogy, while the others
+								are the wordcloud of each specific episode.
 							</p>
-							<p>The wole trilogy word cloud</p>
-							<img src="images\wordclouds\WCFull.png" alt="full"style="width: 50vw; min-width: 330px;">
-							<p>Episode IV word cloud</p>
-							<img src="images\wordclouds\WCEpIV.png" alt="epIV"style="width: 40vw; min-width: 330px;">
-							<p>Episode V word cloud</p>
-							<img src="images\wordclouds\WCEpV.png" alt="epV"style="width: 40vw; min-width: 330px;">
-							<p>Episode VI word cloud</p>
-							<img src="images\wordclouds\WCEpVI (1).png" alt="epVI"style="width: 40vw; min-width: 330px;">
+							<h4>Full trilogy word cloud</h4>
+							<img src="images\wordclouds\WCFull.png" alt="full"style="width: 50vw; min-width: 330px; display: block;
+							margin-left: auto;
+							margin-right: auto;">
+							<br>
+							<h4>Episode IV word cloud</h4>
+							<img src="images\wordclouds\WCEpIV.png" alt="epIV"style="width: 40vw; min-width: 330px;display: block;
+							margin-left: auto;
+							margin-right: auto;">
+							<br>
+							<br>
+							<h4>Episode V word cloud</h4>
+							<img src="images\wordclouds\WCEpV.png" alt="epV"style="width: 40vw; min-width: 330px;display: block;
+							margin-left: auto;
+							margin-right: auto;">
+							<br>
+							<h4>Episode VI word cloud</h4>
+							<img src="images\wordclouds\WCEpVI (1).png" alt="epVI"style="width: 40vw; min-width: 330px;display: block;
+							margin-left: auto;
+							margin-right: auto;">
 						<hr />
 						<p>Following this step, we focused our analysis on characters. 
 							We firstly counted how many lines each character has in the movie, and then performed
-							 a sentiment analysis on the main characters, assigning a sentiment score.
+							 a sentiment analysis on the main characters, assigning a sentiment score. The full script for the analysis can be found 
+							 in this <a href="https://colab.research.google.com/drive/1xQyhTz72LMS1d6kts1kLn22albk7qG7W?usp=sharing">Colab notebook</a>. 
 							 <br> 
 							 The following plots show the relevance of each character according to their number 
 							 of lines in the scripts. Besides the obvious main characters, we can note a slight variation 
-							 between other characters, outlining their importance in each movie. </p>
-							 <p>Characters' plot Episode IV</p>
+							 between other characters, outlining their importance in each movie. Furthermore, we can denote a decrease in the max number of lines per character, perhaps suggesting
+							a shift in the focus on dialogues in favour of the action. </p>
+							<h4> Characters' plot Episode IV </h4>
 							 <img src="images\character plots\CharactersPlotEPIV.png" alt="charplotIV"style="width: 55vw; min-width: 330px;">
-							 <p>Characters' plot Episode V</p>
+							<br>
+							<br>
+							 <h4>Characters' plot Episode V</h4> 
 							 <img src="images\character plots\CharactersPlotEPV.png" alt="charplotV"style="width: 55vw; min-width: 330px;">
-							 <p>Characters's plot Episode VI</p>
+							<br>
+							<br>
+							 <h4>Characters's plot Episode VI</h4> 
 							 <img src="images\character plots\CharactersPlotEPVI.png" alt="charplotVI"style="width: 55vw; min-width: 330px;">
-							 <p>sentiment analysis of each character</p>
+							 <br>
+							 <br>
+							 <p>The final part of the linguistic analysis concerns sentiment. We used the (pun intended) 
+								 VADER library to explore the sentiment the characters express in a movie. 
+								 Sentiment Analysis is the process of computationally determining whether a piece of writing 
+								 is positive, negative or neutral. VADER (Valence Aware Dictionary and sEntiment Reasoner) is a 
+								 lexicon and rule-based sentiment analysis tool which uses a combination of lexical features 
+								 which are generally labeled according to their semantic orientation as either positive or
+								negative. 
+								VADER not only tells about the Positivity and Negativity score but also indicates how positive or 
+								a sentiment is (via the compound). 
+								The compound score is a metric which calculates the sum of all the lexical features and it ranges 
+								between -1 and 1. 
+								<ul class="default">
+									<li>C.S >= 0.05 Positive </li>
+									<li>-0.05 < C.S < 0.05 Neutral  </li>
+									<li>C.S <= -0.05 Negative </li>	
+								</ul></p>
+								<p>To keep this brief, we present some of the results we obtained from our analysis, but the colab file can be used to perform as many as one wishes. </p>
+								<h4>C3P0's Sentiment</h4> 
+								<img src="images\character plots\3p0Scores.PNG" style="width: 55vw; min-width: 330px;">
+								<br>
+								<h4>Vader's Sentiment
+								</h4> 								
+								<img src="images\character plots\vaderScore.PNG" style="width: 55vw; min-width: 330px;">
+								<br>
+								<h4>Luke's Sentiment</h4> 
+								<img src="images\character plots\LukePositive.PNG"style="width: 55vw; min-width: 330px;" >
+								<br>
+								<h4>Emperor's Sentiment</h4>
+								<img src="images\character plots\EmperorScore.PNG" style="width: 55vw; min-width: 330px;" >
+
 					</section>
 					<section>
 						<header>
