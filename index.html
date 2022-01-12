@@ -249,7 +249,7 @@ WHERE {?character ?p swo:alien.
 ?character ?p swo:rebelAlliance
 }
 </pre>
-<img src="images\Query\3RebelAllianceAlien.PNG" style="width: 45vw; min-width: 330px;">
+<img src="images\Query\3RebelAllianceAlien.PNG" style="width: 40vw; min-width: 330px;">
 					<li> <b>In which movies is the actress Carrie Fisher in?</b> </li>
 <pre style="font-family: 'Courier New', Courier, monospace;">
 PREFIX rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
@@ -262,7 +262,7 @@ SELECT ?movie
 WHERE { ?movie swo:hasCast swo:CarrieFisher
 }	
 </pre>
-<img src="images\Query\1CarrieFisher.PNG" style="width: 45vw; min-width: 330px;">
+<img src="images\Query\1CarrieFisher.PNG" style="width: 40vw; min-width: 330px;">
 
 					<li> <b>Which are the enemies of Han Solo?</b> </li>
 <pre style="font-family: 'Courier New', Courier, monospace;">
@@ -277,7 +277,7 @@ WHERE {?character swo:isEnemyOf swo:HanSolo.
 }
 	
 </pre>
-<img src="images\Query\4HanSoloEnemy.PNG" style="width: 45vw; min-width: 330px;">
+<img src="images\Query\4HanSoloEnemy.PNG" style="width: 40vw; min-width: 330px;">
 					<li> <b>Who is Kylo Ren mentor and in which movies they appear together?</b> </li>
 <pre style="font-family: 'Courier New', Courier, monospace;">
 PREFIX rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
@@ -293,7 +293,7 @@ WHERE {?movie swo:hasCharacter ?mentor.
 }
 	
 </pre>
-<img src="images\Query\5KyloRenMentor.PNG" style="width: 45vw; min-width: 330px;">
+<img src="images\Query\5KyloRenMentor.PNG" style="width: 50vw; min-width: 330px;">
 					<li> <b>Are there romantic relations in the movie 'Attack Of the clones?'</b> </li>
 <pre style="font-family: 'Courier New', Courier, monospace;">
 PREFIX rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
@@ -309,7 +309,7 @@ swo:AttackOfTheClones swo:hasCharacter ?character2.
 }
 	
 </pre>
-<img src="images\Query\6RomanticRelationAttackClones.PNG" style="width: 45vw; min-width: 330px;">
+<img src="images\Query\6RomanticRelationAttackClones.PNG" style="width: 50vw; min-width: 330px;">
 					<li> <b>Return all romantic relations in the saga and the movie they are in</b> </li>
 <pre style="font-family: 'Courier New', Courier, monospace;">
 PREFIX rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
@@ -325,7 +325,7 @@ WHERE {?c1 swo:hasRomanticRelationWith ?c2.
 }
 	
 </pre>
-<img src="images\Query\7ALLromanticRelations.PNG" style="width: 45vw; min-width: 330px;">
+<img src="images\Query\7ALLromanticRelations.PNG" style="width: 50vw; min-width: 330px;">
 					<li> <b>To which trilogy the movies belong and in what year were they released?</b> </li>
 <pre style="font-family: 'Courier New', Courier, monospace;">
 PREFIX rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
@@ -340,7 +340,7 @@ WHERE {?trilogy swo:composedOf ?movie.
 }
 	
 </pre>
-<img src="images\Query\8MOvieTrilogyYear.PNG" style="width: 45vw; min-width: 330px;">
+<img src="images\Query\8MOvieTrilogyYear.PNG" style="width: 50vw; min-width: 330px;">
 					<li> <b>Who is both a producer and an actor in the saga?</b> </li>
 <pre style="font-family: 'Courier New', Courier, monospace;">
 PREFIX rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
@@ -354,7 +354,7 @@ WHERE {?person ?p swo:director.
 ?movie swo:hasCast ?person
 }	
 </pre>
-<img src="images\Query\9ProducerActor.PNG" style="width: 45vw; min-width: 330px;">
+<img src="images\Query\9ProducerActor.PNG" style="width: 50vw; min-width: 330px;">
 					<!--
 						</ul>
 					</section>
