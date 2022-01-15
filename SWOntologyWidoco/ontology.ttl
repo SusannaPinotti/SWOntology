@@ -1,0 +1,2067 @@
+@prefix : <http://www.semanticweb.org/ontologies/2021/SWOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ontologies/2021/SWOntology> .
+
+<http://www.semanticweb.org/ontologies/2021/SWOntology> rdf:type owl:Ontology ;
+                                                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "swo" ;
+                                                         rdfs:comment "This ontology is dedicated to the Star Wars franchise and it was created by Susanna Pinotti and Valentina Cozzi, two Digital Humanities and Digital Knowledge students at the university of Bologna." .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#belongsTo
+:belongsTo rdf:type owl:ObjectProperty ;
+           rdfs:domain :movie ;
+           rdfs:range :trilogy .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#composedOf
+:composedOf rdf:type owl:ObjectProperty ;
+            rdfs:domain :trilogy ;
+            rdfs:range :movie .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#composes
+:composes rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isComposedBy ;
+          rdfs:domain :composer ;
+          rdfs:range :music .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#directs
+:directs rdf:type owl:ObjectProperty ;
+         owl:inverseOf :isDirectedBy ;
+         rdfs:domain :director ;
+         rdfs:range :movie .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#hasCast
+:hasCast rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain :movie ;
+         rdfs:range :actor .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#hasCharacter
+:hasCharacter rdf:type owl:ObjectProperty ;
+              rdfs:domain :movie ;
+              rdfs:range :character .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#hasGenre
+:hasGenre rdf:type owl:ObjectProperty ;
+          rdfs:domain :starwars ;
+          rdfs:range :genre .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#hasMusic
+:hasMusic rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :movie ;
+          rdfs:range :music .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#hasProductionStudios
+:hasProductionStudios rdf:type owl:ObjectProperty ;
+                      rdfs:domain :movie ;
+                      rdfs:range :studios .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#hasRomanticRelationWith
+:hasRomanticRelationWith rdf:type owl:ObjectProperty ,
+                                  owl:SymmetricProperty ;
+                         rdfs:domain :character ;
+                         rdfs:range :character .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#hasTitle
+:hasTitle rdf:type owl:ObjectProperty ;
+          rdfs:domain :movie ;
+          rdfs:range :title .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#isApprenticeOf
+:isApprenticeOf rdf:type owl:ObjectProperty ;
+                owl:inverseOf :isMentorOf ;
+                rdfs:domain :character ;
+                rdfs:range :character .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#isChildOf
+:isChildOf rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isParentOf ;
+           rdfs:domain :character ;
+           rdfs:range :character .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy
+:isComposedBy rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :music ;
+              rdfs:range :composer .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#isDirectedBy
+:isDirectedBy rdf:type owl:ObjectProperty ;
+              rdfs:domain :movie ;
+              rdfs:range :director .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#isEnemyOf
+:isEnemyOf rdf:type owl:ObjectProperty ,
+                    owl:SymmetricProperty ;
+           rdfs:domain :character ;
+           rdfs:range :character .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf
+:isFriendOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdf:type owl:SymmetricProperty ;
+            rdfs:domain :character ;
+            rdfs:range :character .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#isGrandChildOf
+:isGrandChildOf rdf:type owl:ObjectProperty ;
+                owl:inverseOf :isGrandParentOf ;
+                rdfs:domain :character ;
+                rdfs:range :character .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#isGrandParentOf
+:isGrandParentOf rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain :character ;
+                 rdfs:range :character .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#isMentorOf
+:isMentorOf rdf:type owl:ObjectProperty ;
+            rdfs:domain :character ;
+            rdfs:range :character .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#isNephewOrNieceOf
+:isNephewOrNieceOf rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :isUncleOrAuntOf ;
+                   rdfs:domain :character ;
+                   rdfs:range :character .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#isParentOf
+:isParentOf rdf:type owl:ObjectProperty ;
+            rdfs:domain :character ;
+            rdfs:range :character .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#isProducedBy
+:isProducedBy rdf:type owl:ObjectProperty ;
+              owl:inverseOf :produces ;
+              rdfs:domain :movie ;
+              rdfs:range :producer .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#isReleasedIn
+:isReleasedIn rdf:type owl:ObjectProperty ;
+              rdfs:domain :movie ;
+              rdfs:range :year .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#isSetIn
+:isSetIn rdf:type owl:ObjectProperty ;
+         rdfs:domain :movie ;
+         rdfs:range :place .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#isSiblingOf
+:isSiblingOf rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdf:type owl:SymmetricProperty ;
+             rdfs:domain :character ;
+             rdfs:range :character .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#isUncleOrAuntOf
+:isUncleOrAuntOf rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain :character ;
+                 rdfs:range :character .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#plays
+:plays rdf:type owl:ObjectProperty ;
+       rdfs:domain :actor ;
+       rdfs:range :character .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#produces
+:produces rdf:type owl:ObjectProperty ;
+          rdfs:domain :producer ;
+          rdfs:range :movie .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#stages
+:stages rdf:type owl:ObjectProperty ;
+        rdfs:domain :real ;
+        rdfs:range :fictional .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#voices
+:voices rdf:type owl:ObjectProperty ;
+        rdfs:domain :actor ;
+        rdfs:range :character .
+
+
+###  http://www.w3.org/2002/07/owl#topObjectProperty
+owl:topObjectProperty rdfs:domain :starwars ;
+                      rdfs:range :genre .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.org/vocab/vann/releaseYear
+<http://purl.org/vocab/vann/releaseYear> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain :year ;
+                                         rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#gen
+:gen rdf:type owl:DatatypeProperty ;
+     rdfs:domain :genre ;
+     rdfs:range rdfs:Literal .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#actor
+:actor rdf:type owl:Class ;
+       rdfs:subClassOf :cast .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#alien
+:alien rdf:type owl:Class ;
+       rdfs:subClassOf :character ;
+       owl:disjointWith :human ,
+                        :machine ;
+       rdfs:comment "Characters that are under the category \"alien\"" .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#alive
+:alive rdf:type owl:Class ;
+       rdfs:subClassOf :actor .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#cast
+:cast rdf:type owl:Class ;
+      rdfs:subClassOf :movie .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#character
+:character rdf:type owl:Class ;
+           rdfs:subClassOf :movie ;
+           rdfs:comment "The most significant characters in every movie" .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#composer
+:composer rdf:type owl:Class ;
+          rdfs:subClassOf :music .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide
+:darkSide rdf:type owl:Class ;
+          rdfs:subClassOf :character ;
+          owl:disjointWith :other ,
+                           :rebelAlliance ;
+          rdfs:comment "Characters that believe in the Dark Side cause." .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#dead
+:dead rdf:type owl:Class ;
+      rdfs:subClassOf :actor ;
+      rdfs:comment "Actors who have passed" .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#director
+:director rdf:type owl:Class ;
+          rdfs:subClassOf :movie .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#fictional
+:fictional rdf:type owl:Class ;
+           rdfs:subClassOf :place ;
+           owl:disjointWith :real .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#genre
+:genre rdf:type owl:Class ;
+       rdfs:subClassOf :starwars ;
+       rdfs:comment "The genre of the movies" .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#human
+:human rdf:type owl:Class ;
+       rdfs:subClassOf :character ;
+       owl:disjointWith :machine ;
+       rdfs:comment "Characters that are human" .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#machine
+:machine rdf:type owl:Class ;
+         rdfs:subClassOf :character ;
+         rdfs:comment "Characters that are machines" .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#movie
+:movie rdf:type owl:Class ;
+       rdfs:subClassOf :trilogy .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#music
+:music rdf:type owl:Class ;
+       rdfs:subClassOf :movie ;
+       rdfs:comment "Star Wars main soundtracks" .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#other
+:other rdf:type owl:Class ;
+       rdfs:subClassOf :character ;
+       owl:disjointWith :rebelAlliance ;
+       rdfs:comment "Characters that are neutral" .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#place
+:place rdf:type owl:Class ;
+       rdfs:subClassOf :movie .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#producer
+:producer rdf:type owl:Class ;
+          rdfs:subClassOf :movie .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#real
+:real rdf:type owl:Class ;
+      rdfs:subClassOf :place .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance
+:rebelAlliance rdf:type owl:Class ;
+               rdfs:subClassOf :character ;
+               rdfs:comment "Characters that believe in the Light Side cause." .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#starwars
+:starwars rdf:type owl:Class ;
+          rdfs:subClassOf owl:Thing ;
+          rdfs:comment "Star Wars is an American science fiction franchise created by George Lucas, which began with the eponymous 1977 film and quickly became a worldwide pop-culture phenomenon." .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#studios
+:studios rdf:type owl:Class ;
+         rdfs:subClassOf :movie .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#title
+:title rdf:type owl:Class ;
+       rdfs:subClassOf :movie .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#trilogy
+:trilogy rdf:type owl:Class ;
+         rdfs:subClassOf :starwars ;
+         rdfs:comment "The original film (Star Wars), retroactively subtitled Episode IV: A New Hope (1977), was followed by the sequels Episode V: The Empire Strikes Back (1980) and Episode VI: Return of the Jedi (1983), forming the original Star Wars trilogy. Lucas later returned to filmmaking to direct a prequel trilogy, consisting of Episode I: The Phantom Menace (1999), Episode II: Attack of the Clones (2002), and Episode III: Revenge of the Sith (2005). In 2012, Lucas sold his production company to Disney, relinquishing his ownership of the franchise. This led to a sequel trilogy, consisting of Episode VII: The Force Awakens (2015), Episode VIII: The Last Jedi (2017), and Episode IX: The Rise of Skywalker (2019)." .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#year
+:year rdf:type owl:Class ;
+      rdfs:subClassOf :movie .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#ANewHope
+:ANewHope rdf:type owl:NamedIndividual ,
+                   :movie ;
+          :belongsTo :OriginalTrilogy ;
+          :hasCast :AlecGuinness ,
+                   :AnthonyDaniels ,
+                   :CarrieFisher ,
+                   :DavidProwse ,
+                   :HarrisonFord ,
+                   :KennyBaker ,
+                   :MarkHamill ,
+                   :PeterMayhew ;
+          :hasCharacter :C-3PO ,
+                        :Chewbecca ,
+                        :DarthVader ,
+                        :HanSolo ,
+                        :LukeSkywalker ,
+                        :Obi-WanKenobi ,
+                        :PrincessLeia ,
+                        :R2-D2 ;
+          :hasMusic :PrincessLeiaTheme ,
+                    :RebelFanfare ,
+                    :RebelVictory ,
+                    :StarWarsMainTitle ,
+                    :TheForce ,
+                    :TheThroneRoom ;
+          :hasProductionStudios <http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd.> ;
+          :isDirectedBy :GeorgeLucas ;
+          :isProducedBy :GaryKurtz ;
+          :isReleasedIn <http://www.semanticweb.org/ontologies/2021/SWOntology#1977> ;
+          :isSetIn :USA-DeathValley .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#AcrossTheStars
+:AcrossTheStars rdf:type owl:NamedIndividual ,
+                         :music ;
+                :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#AdamDriver
+:AdamDriver rdf:type owl:NamedIndividual ,
+                     :actor ,
+                     :alive ;
+            :plays :KyloRen .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Ahch-To
+:Ahch-To rdf:type owl:NamedIndividual ,
+                  :fictional .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Ahch-ToIsland
+:Ahch-ToIsland rdf:type owl:NamedIndividual ,
+                        :music ;
+               :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#AhmedBest
+:AhmedBest rdf:type owl:NamedIndividual ,
+                    :actor ,
+                    :alive ;
+           :plays :JarJarBinks .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Alderaan
+:Alderaan rdf:type owl:NamedIndividual ,
+                   :fictional .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#AlecGuinness
+:AlecGuinness rdf:type owl:NamedIndividual ,
+                       :actor ,
+                       :dead ;
+              :plays :Obi-WanKenobi .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinSkywalker
+:AnakinSkywalker rdf:type owl:NamedIndividual ,
+                          :character ,
+                          :human ;
+                 :hasRomanticRelationWith :PadméAmidala ;
+                 :isApprenticeOf :Obi-WanKenobi ;
+                 :isFriendOf :C-3PO ,
+                             :R2-D2 ;
+                 :isGrandParentOf :KyloRen ;
+                 :isParentOf :LukeSkywalker ,
+                             :PrincessLeia .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinTheme
+:AnakinTheme rdf:type owl:NamedIndividual ,
+                      :music ;
+             :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#AndySerkis
+:AndySerkis rdf:type owl:NamedIndividual ,
+                     :actor ,
+                     :alive ;
+            :plays :SupremeLeaderSnoke .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#AnthonyDaniels
+:AnthonyDaniels rdf:type owl:NamedIndividual ,
+                         :actor ,
+                         :alive ;
+                :plays :C-3PO .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#AttackOfTheClones
+:AttackOfTheClones rdf:type owl:NamedIndividual ,
+                            :movie ;
+                   :belongsTo :PrequelTrilogy ;
+                   :hasCast :AhmedBest ,
+                            :AnthonyDaniels ,
+                            :ChristopherLee ,
+                            :DanielLogan ,
+                            :ErnieFosselius ,
+                            :EwanMcGregor ,
+                            :FrankOz ,
+                            :HaydenChristensen ,
+                            :IanMcDiarmid ,
+                            :KennyBaker ,
+                            :NataliePortman ,
+                            :PernillaAugust ,
+                            :SamuelL.Jackson ,
+                            :SilasCarson ,
+                            :TemueraMorrison ;
+                   :hasCharacter :AnakinSkywalker ,
+                                 :BobaFett ,
+                                 :C-3PO ,
+                                 :CountDooku ,
+                                 :DarthSidious ,
+                                 :JangoFett ,
+                                 :JarJarBinks ,
+                                 :MaceWindu ,
+                                 :NuteGunray ,
+                                 :Obi-WanKenobi ,
+                                 :PadméAmidala ,
+                                 :PoggleTheLesser ,
+                                 :R2-D2 ,
+                                 :ShmiSkywalker ,
+                                 :Yoda ;
+                   :hasMusic :AcrossTheStars ,
+                             :AnakinTheme ,
+                             :DroidInvasionMarch ,
+                             :DuelOfTheFates ,
+                             :EmperorTheme ,
+                             :RebelFanfare ,
+                             :StarWarsMainTitle ,
+                             :TheForce ,
+                             :TheImperialMarch ;
+                   :hasProductionStudios <http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd.> ;
+                   :isDirectedBy :GeorgeLucas ;
+                   :isProducedBy :RickMcCallum ;
+                   :isReleasedIn <http://www.semanticweb.org/ontologies/2021/SWOntology#2002> ;
+                   :isSetIn :Italy-PalaceOfCaserta ,
+                            :Italy-VillaDelBalbianello .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#BB-8
+:BB-8 rdf:type owl:NamedIndividual ,
+               :character ,
+               :machine ,
+               :rebelAlliance ;
+      :isFriendOf :Finn ,
+                  :PoeDameron ,
+                  :Rey .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#BabuFrik
+:BabuFrik rdf:type owl:NamedIndividual ,
+                   :alien ,
+                   :character ,
+                   :rebelAlliance .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#BadRobotProductions
+:BadRobotProductions rdf:type owl:NamedIndividual ,
+                              :studios .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#BattleOfTheHeroes
+:BattleOfTheHeroes rdf:type owl:NamedIndividual ,
+                            :music ;
+                   :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#BeniciodelToro
+:BeniciodelToro rdf:type owl:NamedIndividual ,
+                         :actor ,
+                         :alive ;
+                :plays :DJ .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#BillieLourd
+:BillieLourd rdf:type owl:NamedIndividual ,
+                      :actor ,
+                      :alive ;
+             :isChildOf :CarrieFisher ;
+             :plays :KaydelKoConnix .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#BillyDeeWilliams
+:BillyDeeWilliams rdf:type owl:NamedIndividual ,
+                           :actor ,
+                           :alive ;
+                  :plays :LandoCalrissian .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#BobaFett
+:BobaFett rdf:type owl:NamedIndividual ,
+                   :character ,
+                   :human ,
+                   :other ;
+          :isEnemyOf :HanSolo .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#BrianHerring
+:BrianHerring rdf:type owl:NamedIndividual ,
+                       :actor ,
+                       :alive ;
+              :plays :BB-8 .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#BryanBurk
+:BryanBurk rdf:type owl:NamedIndividual ,
+                    :producer .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO
+:C-3PO rdf:type owl:NamedIndividual ,
+                :character ,
+                :machine ,
+                :rebelAlliance ;
+       :isFriendOf :LukeSkywalker ,
+                   :PrincessLeia ,
+                   :R2-D2 .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#CantinaBand
+:CantinaBand rdf:type owl:NamedIndividual ,
+                      :music ;
+             :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#CaptainPhasma
+:CaptainPhasma rdf:type owl:NamedIndividual ,
+                        :character ,
+                        :darkSide ,
+                        :human ;
+               :isEnemyOf :Finn .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#CarrieFisher
+:CarrieFisher rdf:type owl:NamedIndividual ,
+                       :actor ,
+                       :dead ;
+              :plays :PrincessLeia .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca
+:Chewbecca rdf:type owl:NamedIndividual ,
+                    :alien ,
+                    :character ,
+                    :rebelAlliance ;
+           :isFriendOf :Finn ,
+                       :HanSolo ,
+                       :LukeSkywalker ,
+                       :MazKanata ,
+                       :PrincessLeia ,
+                       :Rey ,
+                       :Yoda .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#ChristopherLee
+:ChristopherLee rdf:type owl:NamedIndividual ,
+                         :actor ,
+                         :dead ;
+                :plays :CountDooku .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#CountDooku
+:CountDooku rdf:type owl:NamedIndividual ,
+                     :character ,
+                     :darkSide ,
+                     :human ;
+            :isApprenticeOf :DarthSidious .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#D-O
+:D-O rdf:type owl:NamedIndividual ,
+              :character ,
+              :machine ,
+              :rebelAlliance .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#DJ
+:DJ rdf:type owl:NamedIndividual ,
+             :character ,
+             :human ,
+             :other .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#DaisyRidley
+:DaisyRidley rdf:type owl:NamedIndividual ,
+                      :actor ,
+                      :alive ;
+             :plays :Rey .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#DanielLogan
+:DanielLogan rdf:type owl:NamedIndividual ,
+                      :actor ,
+                      :alive ;
+             :plays :BobaFett .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#DarkSideTheme
+:DarkSideTheme rdf:type owl:NamedIndividual ,
+                        :music ;
+               :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#DarthMaul
+:DarthMaul rdf:type owl:NamedIndividual ,
+                    :alien ,
+                    :character ,
+                    :darkSide ;
+           :isApprenticeOf :DarthSidious ;
+           :isEnemyOf :Obi-WanKenobi ,
+                      :Qui-GonJinn .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#DarthSidious
+:DarthSidious rdf:type owl:NamedIndividual ,
+                       :character ,
+                       :darkSide ,
+                       :human ;
+              :isGrandParentOf :Rey ;
+              :isMentorOf :DarthVader .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#DarthVader
+:DarthVader rdf:type owl:NamedIndividual ,
+                     :character ,
+                     :darkSide ,
+                     :human ;
+            :isChildOf :ShmiSkywalker ;
+            :isGrandParentOf :KyloRen ;
+            :isParentOf :LukeSkywalker ,
+                        :PrincessLeia .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#DaveChapman
+:DaveChapman rdf:type owl:NamedIndividual ,
+                      :actor ,
+                      :alive ;
+             :plays :BB-8 .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#DavidProwse
+:DavidProwse rdf:type owl:NamedIndividual ,
+                      :actor ,
+                      :dead ;
+             :plays :DarthVader .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#DomhnallGleeson
+:DomhnallGleeson rdf:type owl:NamedIndividual ,
+                          :actor ,
+                          :alive ;
+                 :plays :GeneralHux .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#DroidInvasionMarch
+:DroidInvasionMarch rdf:type owl:NamedIndividual ,
+                             :music ;
+                    :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#DuelOfTheFates
+:DuelOfTheFates rdf:type owl:NamedIndividual ,
+                         :music ;
+                :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Emirates-RubAlKhali
+:Emirates-RubAlKhali rdf:type owl:NamedIndividual ,
+                              :real ;
+                     :stages :Jakku .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#EmperorTheme
+:EmperorTheme rdf:type owl:NamedIndividual ,
+                       :music ;
+              :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Endor
+:Endor rdf:type owl:NamedIndividual ,
+                :fictional .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#ErnieFosselius
+:ErnieFosselius rdf:type owl:NamedIndividual ,
+                         :actor ,
+                         :alive ;
+                :voices :PoggleTheLesser .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#EwanMcGregor
+:EwanMcGregor rdf:type owl:NamedIndividual ,
+                       :actor ,
+                       :alive ;
+              :plays :Obi-WanKenobi .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Finn
+:Finn rdf:type owl:NamedIndividual ,
+               :character ,
+               :human ,
+               :rebelAlliance ;
+      :isFriendOf :PoeDameron ,
+                  :Rey .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#FrankOz
+:FrankOz rdf:type owl:NamedIndividual ,
+                  :actor ,
+                  :alive ;
+         :voices :Yoda .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#GaryKurtz
+:GaryKurtz rdf:type owl:NamedIndividual ,
+                    :producer .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#GeneralGrievous
+:GeneralGrievous rdf:type owl:NamedIndividual ,
+                          :character ,
+                          :darkSide ,
+                          :machine ;
+                 :isApprenticeOf :DarthSidious ;
+                 :isEnemyOf :Obi-WanKenobi .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#GeneralHux
+:GeneralHux rdf:type owl:NamedIndividual ,
+                     :character ,
+                     :darkSide ,
+                     :human ;
+            :isEnemyOf :KyloRen .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#GeorgeLucas
+:GeorgeLucas rdf:type owl:NamedIndividual ,
+                      :director .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#GwendolineChristie
+:GwendolineChristie rdf:type owl:NamedIndividual ,
+                             :actor ,
+                             :alive ;
+                    :plays :CaptainPhasma .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo
+:HanSolo rdf:type owl:NamedIndividual ,
+                  :character ,
+                  :human ,
+                  :rebelAlliance ;
+         :hasRomanticRelationWith :PrincessLeia ;
+         :isFriendOf :Chewbecca ,
+                     :LandoCalrissian ,
+                     :LukeSkywalker ,
+                     :MazKanata ;
+         :isParentOf :KyloRen .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#HanSoloAndThePrincess
+:HanSoloAndThePrincess rdf:type owl:NamedIndividual ,
+                                :music ;
+                       :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#HarrisonFord
+:HarrisonFord rdf:type owl:NamedIndividual ,
+                       :actor ,
+                       :alive ;
+              :plays :HanSolo .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#HassanTaj
+:HassanTaj rdf:type owl:NamedIndividual ,
+                    :actor ,
+                    :alive ;
+           :plays :R2-D2 .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#HaydenChristensen
+:HaydenChristensen rdf:type owl:NamedIndividual ,
+                            :actor ,
+                            :alive ;
+                   :plays :AnakinSkywalker .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Hoth
+:Hoth rdf:type owl:NamedIndividual ,
+               :fictional .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#HowardKazanjian
+:HowardKazanjian rdf:type owl:NamedIndividual ,
+                          :producer .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#IanMcDiarmid
+:IanMcDiarmid rdf:type owl:NamedIndividual ,
+                       :actor ,
+                       :alive ;
+              :plays :DarthSidious .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Iceland-Eyjafjallajokull
+:Iceland-Eyjafjallajokull rdf:type owl:NamedIndividual ,
+                                   :real ;
+                          :stages :StarkillerBase .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Ireland-SkelligMichael
+:Ireland-SkelligMichael rdf:type owl:NamedIndividual ,
+                                 :real ;
+                        :stages :Ahch-To .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#IrvinKershner
+:IrvinKershner rdf:type owl:NamedIndividual ,
+                        :director .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-MountEtna
+:Italy-MountEtna rdf:type owl:NamedIndividual ,
+                          :real ;
+                 :stages :Mustafar .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-PalaceOfCaserta
+:Italy-PalaceOfCaserta rdf:type owl:NamedIndividual ,
+                                :real ;
+                       :stages :NabooRoyalPalace .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-VillaDelBalbianello
+:Italy-VillaDelBalbianello rdf:type owl:NamedIndividual ,
+                                    :real ;
+                           :stages :NabooLakeSide .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#J.J.Abrams
+:J.J.Abrams rdf:type owl:NamedIndividual ,
+                     :actor ,
+                     :director ,
+                     :producer ;
+            :plays :D-O .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#JabbaTheHut
+:JabbaTheHut rdf:type owl:NamedIndividual ,
+                      :alien ,
+                      :character ,
+                      :other ;
+             :isEnemyOf :HanSolo ;
+             :isFriendOf :BobaFett .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#JakeLloyd
+:JakeLloyd rdf:type owl:NamedIndividual ,
+                    :actor ,
+                    :alive ;
+           :plays :AnakinSkywalker .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Jakku
+:Jakku rdf:type owl:NamedIndividual ,
+                :fictional .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#JangoFett
+:JangoFett rdf:type owl:NamedIndividual ,
+                    :character ,
+                    :human ,
+                    :other ;
+           :isEnemyOf :Obi-WanKenobi ;
+           :isParentOf :BobaFett .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Jannah
+:Jannah rdf:type owl:NamedIndividual ,
+                 :character ,
+                 :human ,
+                 :rebelAlliance ;
+        :isFriendOf :Finn .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#JarJarBinks
+:JarJarBinks rdf:type owl:NamedIndividual ,
+                      :alien ,
+                      :character ,
+                      :rebelAlliance ;
+             :isFriendOf :Obi-WanKenobi ,
+                         :PadméAmidala ,
+                         :Qui-GonJinn .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#JeremyBulloch
+:JeremyBulloch rdf:type owl:NamedIndividual ,
+                        :actor ,
+                        :dead ;
+               :plays :BobaFett .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#JimmyVee
+:JimmyVee rdf:type owl:NamedIndividual ,
+                   :actor ,
+                   :alive ;
+          :plays :R2-D2 .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#JohnBoyega
+:JohnBoyega rdf:type owl:NamedIndividual ,
+                     :actor ,
+                     :alive ;
+            :plays :Finn .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams
+:JohnWilliams rdf:type owl:NamedIndividual ,
+                       :composer .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#JoonasSuotamo
+:JoonasSuotamo rdf:type owl:NamedIndividual ,
+                        :actor ,
+                        :alive ;
+               :plays :Chewbecca .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#KathleenKennedy
+:KathleenKennedy rdf:type owl:NamedIndividual ,
+                          :producer .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#KaydelKoConnix
+:KaydelKoConnix rdf:type owl:NamedIndividual ,
+                         :character ,
+                         :human ,
+                         :rebelAlliance ;
+                :isFriendOf :PrincessLeia .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#KellyMarieTran
+:KellyMarieTran rdf:type owl:NamedIndividual ,
+                         :actor ,
+                         :alive ;
+                :plays :RoseTico .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#KennyBaker
+:KennyBaker rdf:type owl:NamedIndividual ,
+                     :actor ,
+                     :dead ;
+            :plays :R2-D2 .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#KeriRussel
+:KeriRussel rdf:type owl:NamedIndividual ,
+                     :actor ,
+                     :alive ;
+            :plays :ZoriiBliss .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen
+:KyloRen rdf:type owl:NamedIndividual ,
+                  :character ,
+                  :darkSide ,
+                  :human ;
+         :isNephewOrNieceOf :LukeSkywalker .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRenFanfare
+:KyloRenFanfare rdf:type owl:NamedIndividual ,
+                         :music ;
+                :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#LandoCalrissian
+:LandoCalrissian rdf:type owl:NamedIndividual ,
+                          :character ,
+                          :human ,
+                          :rebelAlliance ;
+                 :isFriendOf :Chewbecca ,
+                             :HanSolo .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#LauraDern
+:LauraDern rdf:type owl:NamedIndividual ,
+                    :actor ,
+                    :alive ;
+           :plays :Vice-AdmiralAmilynHoldo .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#LeeTowersey
+:LeeTowersey rdf:type owl:NamedIndividual ,
+                      :actor ,
+                      :alive ;
+             :plays :R2-D2 .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#LiamNeeson
+:LiamNeeson rdf:type owl:NamedIndividual ,
+                     :actor ,
+                     :alive ;
+            :plays :Qui-GonJinn .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#LorSanTekka
+:LorSanTekka rdf:type owl:NamedIndividual ,
+                      :character ,
+                      :human ,
+                      :rebelAlliance ;
+             :isFriendOf :PoeDameron .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd.
+<http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd.> rdf:type owl:NamedIndividual ,
+                                                                               :studios .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker
+:LukeSkywalker rdf:type owl:NamedIndividual ,
+                        :character ,
+                        :human ,
+                        :rebelAlliance ;
+               :isApprenticeOf :Obi-WanKenobi ,
+                               :Yoda ;
+               :isChildOf :DarthVader ;
+               :isFriendOf :Chewbecca ,
+                           :HanSolo ,
+                           :R2-D2 ;
+               :isMentorOf :KyloRen ,
+                           :Rey ;
+               :isSiblingOf :PrincessLeia .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#LukeTheme
+:LukeTheme rdf:type owl:NamedIndividual ,
+                    :music ;
+           :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#MaceWindu
+:MaceWindu rdf:type owl:NamedIndividual ,
+                    :character ,
+                    :human ,
+                    :rebelAlliance ;
+           :isFriendOf :Obi-WanKenobi ,
+                       :Qui-GonJinn ,
+                       :Yoda .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#MarchOfTheResistance
+:MarchOfTheResistance rdf:type owl:NamedIndividual ,
+                               :music ;
+                      :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#MarkHamill
+:MarkHamill rdf:type owl:NamedIndividual ,
+                     :actor ,
+                     :alive ;
+            :plays :LukeSkywalker .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#MatthewWood
+:MatthewWood rdf:type owl:NamedIndividual ,
+                      :actor ,
+                      :alive ;
+             :plays :GeneralGrievous .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#MaxvonSydow
+:MaxvonSydow rdf:type owl:NamedIndividual ,
+                      :actor ,
+                      :dead .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#MazKanata
+:MazKanata rdf:type owl:NamedIndividual ,
+                    :alien ,
+                    :character ,
+                    :rebelAlliance ;
+           :isFriendOf :PrincessLeia .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#MichelleRejwan
+:MichelleRejwan rdf:type owl:NamedIndividual ,
+                         :producer .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Mustafar
+:Mustafar rdf:type owl:NamedIndividual ,
+                   :fictional .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#NabooLakeSide
+:NabooLakeSide rdf:type owl:NamedIndividual ,
+                        :fictional .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#NabooRoyalPalace
+:NabooRoyalPalace rdf:type owl:NamedIndividual ,
+                           :fictional .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#NaomiAckie
+:NaomiAckie rdf:type owl:NamedIndividual ,
+                     :actor ,
+                     :alive ;
+            :plays :Jannah .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#NataliePortman
+:NataliePortman rdf:type owl:NamedIndividual ,
+                         :actor ,
+                         :alive ;
+                :plays :PadméAmidala .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Norway-Hardangerjokulen
+:Norway-Hardangerjokulen rdf:type owl:NamedIndividual ,
+                                  :real ;
+                         :stages :Hoth .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#NuteGunray
+:NuteGunray rdf:type owl:NamedIndividual ,
+                     :alien ,
+                     :character ,
+                     :other ;
+            :isEnemyOf :PadméAmidala .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi
+:Obi-WanKenobi rdf:type owl:NamedIndividual ,
+                        :character ,
+                        :human ,
+                        :rebelAlliance ;
+               :isFriendOf :PrincessLeia ,
+                           :Yoda ;
+               :isMentorOf :LukeSkywalker .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#OriginalTrilogy
+:OriginalTrilogy rdf:type owl:NamedIndividual ,
+                          :trilogy ;
+                 :composedOf :ANewHope ,
+                             :ReturnOfTheJedi ,
+                             :TheEmpireStrikesBack .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#OscarIsaac
+:OscarIsaac rdf:type owl:NamedIndividual ,
+                     :actor ,
+                     :alive ;
+            :plays :PoeDameron .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#PadméAmidala
+:PadméAmidala rdf:type owl:NamedIndividual ,
+                       :character ,
+                       :human ,
+                       :rebelAlliance ;
+              :isGrandParentOf :KyloRen ;
+              :isParentOf :LukeSkywalker ,
+                          :PrincessLeia .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#ParadeOfTheEwoks
+:ParadeOfTheEwoks rdf:type owl:NamedIndividual ,
+                           :music ;
+                  :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#PernillaAugust
+:PernillaAugust rdf:type owl:NamedIndividual ,
+                         :actor ,
+                         :alive ;
+                :plays :ShmiSkywalker .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#PeterMayhew
+:PeterMayhew rdf:type owl:NamedIndividual ,
+                      :actor ,
+                      :dead ;
+             :plays :Chewbecca .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#PoeDameron
+:PoeDameron rdf:type owl:NamedIndividual ,
+                     :character ,
+                     :human ,
+                     :rebelAlliance .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#PoggleTheLesser
+:PoggleTheLesser rdf:type owl:NamedIndividual ,
+                          :alien ,
+                          :character ,
+                          :other ;
+                 :isFriendOf :NuteGunray .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#PrequelTrilogy
+:PrequelTrilogy rdf:type owl:NamedIndividual ,
+                         :trilogy ;
+                :composedOf :AttackOfTheClones ,
+                            :RevengeOfTheSith ,
+                            :ThePhantomMenace .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia
+:PrincessLeia rdf:type owl:NamedIndividual ,
+                       :character ,
+                       :human ,
+                       :rebelAlliance ;
+              :isParentOf :KyloRen ;
+              :isSiblingOf :LukeSkywalker .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeiaTheme
+:PrincessLeiaTheme rdf:type owl:NamedIndividual ,
+                            :music ;
+                   :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Qui-GonJinn
+:Qui-GonJinn rdf:type owl:NamedIndividual ,
+                      :character ,
+                      :human ,
+                      :rebelAlliance ;
+             :isFriendOf :Yoda ;
+             :isMentorOf :Obi-WanKenobi .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2
+:R2-D2 rdf:type owl:NamedIndividual ,
+                :character ,
+                :machine ,
+                :rebelAlliance ;
+       :isFriendOf :BB-8 ,
+                   :PrincessLeia .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#RamBergman
+:RamBergman rdf:type owl:NamedIndividual ,
+                     :producer .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#RayPark
+:RayPark rdf:type owl:NamedIndividual ,
+                  :actor ,
+                  :alive ;
+         :plays :DarthMaul .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare
+:RebelFanfare rdf:type owl:NamedIndividual ,
+                       :music ;
+              :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#RebelVictory
+:RebelVictory rdf:type owl:NamedIndividual ,
+                       :music ;
+              :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#ReturnOfTheJedi
+:ReturnOfTheJedi rdf:type owl:NamedIndividual ,
+                          :movie ;
+                 :belongsTo :OriginalTrilogy ;
+                 :hasCast :AlecGuinness ,
+                          :AnthonyDaniels ,
+                          :BillyDeeWilliams ,
+                          :CarrieFisher ,
+                          :DavidProwse ,
+                          :FrankOz ,
+                          :HarrisonFord ,
+                          :IanMcDiarmid ,
+                          :JeremyBulloch ,
+                          :KennyBaker ,
+                          :MarkHamill ,
+                          :PeterMayhew ,
+                          :SebastianShaw ,
+                          :ThomasDeclanMulholland ;
+                 :hasCharacter :BobaFett ,
+                               :C-3PO ,
+                               :Chewbecca ,
+                               :DarthSidious ,
+                               :DarthVader ,
+                               :HanSolo ,
+                               :JabbaTheHut ,
+                               :LandoCalrissian ,
+                               :LukeSkywalker ,
+                               :Obi-WanKenobi ,
+                               :PrincessLeia ,
+                               :R2-D2 ,
+                               :Yoda ;
+                 :hasMusic :EmperorTheme ,
+                           :HanSoloAndThePrincess ,
+                           :ParadeOfTheEwoks ,
+                           :PrincessLeiaTheme ,
+                           :RebelFanfare ,
+                           :StarWarsMainTitle ,
+                           :TheForce ,
+                           :TheForestBattle ,
+                           :TheImperialMarch ,
+                           :YodaTheme ,
+                           <http://www.semanticweb.org/ontologies/2021/SWOntology#Luke&Leia> ;
+                 :hasProductionStudios <http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd.> ;
+                 :isDirectedBy :RichardMarquand ;
+                 :isProducedBy :HowardKazanjian ;
+                 :isReleasedIn <http://www.semanticweb.org/ontologies/2021/SWOntology#1983> ;
+                 :isSetIn :USA-DelNorteCounty .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#RevengeOfTheSith
+:RevengeOfTheSith rdf:type owl:NamedIndividual ,
+                           :movie ;
+                  :belongsTo :PrequelTrilogy ;
+                  :hasCast :AhmedBest ,
+                           :AnthonyDaniels ,
+                           :ChristopherLee ,
+                           :ErnieFosselius ,
+                           :EwanMcGregor ,
+                           :FrankOz ,
+                           :HaydenChristensen ,
+                           :IanMcDiarmid ,
+                           :KennyBaker ,
+                           :MatthewWood ,
+                           :NataliePortman ,
+                           :SamuelL.Jackson ,
+                           :SilasCarson ;
+                  :hasCharacter :AnakinSkywalker ,
+                                :C-3PO ,
+                                :CountDooku ,
+                                :DarthSidious ,
+                                :GeneralGrievous ,
+                                :JarJarBinks ,
+                                :MaceWindu ,
+                                :NuteGunray ,
+                                :Obi-WanKenobi ,
+                                :PadméAmidala ,
+                                :PoggleTheLesser ,
+                                :R2-D2 ,
+                                :Yoda ;
+                  :hasMusic :AcrossTheStars ,
+                            :AnakinTheme ,
+                            :BattleOfTheHeroes ,
+                            :DarkSideTheme ,
+                            :DroidInvasionMarch ,
+                            :DuelOfTheFates ,
+                            :EmperorTheme ,
+                            :PrincessLeiaTheme ,
+                            :RebelFanfare ,
+                            :StarWarsMainTitle ,
+                            :TheForce ,
+                            :TheImperialMarch ;
+                  :hasProductionStudios <http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd.> ;
+                  :isDirectedBy :GeorgeLucas ;
+                  :isProducedBy :RickMcCallum ;
+                  :isReleasedIn <http://www.semanticweb.org/ontologies/2021/SWOntology#2005> ;
+                  :isSetIn :Italy-MountEtna ,
+                           :Switzerland-Grindelwald .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Rey
+:Rey rdf:type owl:NamedIndividual ,
+              :character ,
+              :human ,
+              :rebelAlliance ;
+     :hasRomanticRelationWith :KyloRen .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#ReyTheme
+:ReyTheme rdf:type owl:NamedIndividual ,
+                   :music ;
+          :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#RiaJohnson
+:RiaJohnson rdf:type owl:NamedIndividual ,
+                     :director .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#RichardMarquand
+:RichardMarquand rdf:type owl:NamedIndividual ,
+                          :director .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#RickMcCallum
+:RickMcCallum rdf:type owl:NamedIndividual ,
+                       :producer .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#RoseTico
+:RoseTico rdf:type owl:NamedIndividual ,
+                   :character ,
+                   :human ,
+                   :rebelAlliance ;
+          :isFriendOf :Finn .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#SamuelL.Jackson
+:SamuelL.Jackson rdf:type owl:NamedIndividual ,
+                          :actor ,
+                          :alive ;
+                 :plays :MaceWindu .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#ScienceFiction
+:ScienceFiction rdf:type owl:NamedIndividual ,
+                         :genre .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#SebastianShaw
+:SebastianShaw rdf:type owl:NamedIndividual ,
+                        :actor ,
+                        :dead ;
+               :plays :DarthVader .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#SequelTrilogy
+:SequelTrilogy rdf:type owl:NamedIndividual ,
+                        :trilogy ;
+               :composedOf :TheForceAwakens ,
+                           :TheLastJedi ,
+                           :TheRiseOfSkywalker .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#ShirleyHenderson
+:ShirleyHenderson rdf:type owl:NamedIndividual ,
+                           :actor ,
+                           :alive ;
+                  :voices :BabuFrik .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#ShmiSkywalker
+:ShmiSkywalker rdf:type owl:NamedIndividual ,
+                        :character ,
+                        :human ;
+               :isGrandParentOf :LukeSkywalker ,
+                                :PrincessLeia ;
+               :isParentOf :AnakinSkywalker .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#SilasCarson
+:SilasCarson rdf:type owl:NamedIndividual ,
+                      :actor ,
+                      :alive ;
+             :plays :NuteGunray .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle
+:StarWarsMainTitle rdf:type owl:NamedIndividual ,
+                            :music ;
+                   :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#StarkillerBase
+:StarkillerBase rdf:type owl:NamedIndividual ,
+                         :fictional .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#SupremeLeaderSnoke
+:SupremeLeaderSnoke rdf:type owl:NamedIndividual ,
+                             :alien ,
+                             :character ,
+                             :darkSide ;
+                    :isEnemyOf :Rey ;
+                    :isMentorOf :KyloRen .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Switzerland-Grindelwald
+:Switzerland-Grindelwald rdf:type owl:NamedIndividual ,
+                                  :real ;
+                         :stages :Alderaan .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Tatooine
+:Tatooine rdf:type owl:NamedIndividual ,
+                   :fictional .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#TatooineDesert
+:TatooineDesert rdf:type owl:NamedIndividual ,
+                         :fictional .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#TemueraMorrison
+:TemueraMorrison rdf:type owl:NamedIndividual ,
+                          :actor ,
+                          :alive ;
+                 :plays :JangoFett .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#TheAsteroidField
+:TheAsteroidField rdf:type owl:NamedIndividual ,
+                           :music ;
+                  :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#TheBattleOfCrait
+:TheBattleOfCrait rdf:type owl:NamedIndividual ,
+                           :music ;
+                  :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#TheEmpireStrikesBack
+:TheEmpireStrikesBack rdf:type owl:NamedIndividual ,
+                               :movie ;
+                      :belongsTo :OriginalTrilogy ;
+                      :hasCast :AlecGuinness ,
+                               :AnthonyDaniels ,
+                               :BillyDeeWilliams ,
+                               :CarrieFisher ,
+                               :DavidProwse ,
+                               :FrankOz ,
+                               :HarrisonFord ,
+                               :IanMcDiarmid ,
+                               :JeremyBulloch ,
+                               :KennyBaker ,
+                               :MarkHamill ,
+                               :PeterMayhew ;
+                      :hasCharacter :BobaFett ,
+                                    :C-3PO ,
+                                    :Chewbecca ,
+                                    :DarthSidious ,
+                                    :DarthVader ,
+                                    :HanSolo ,
+                                    :LandoCalrissian ,
+                                    :LukeSkywalker ,
+                                    :Obi-WanKenobi ,
+                                    :PrincessLeia ,
+                                    :R2-D2 ,
+                                    :Yoda ;
+                      :hasMusic :DarkSideTheme ,
+                                :HanSoloAndThePrincess ,
+                                :PrincessLeiaTheme ,
+                                :RebelFanfare ,
+                                :RebelVictory ,
+                                :StarWarsMainTitle ,
+                                :TheAsteroidField ,
+                                :TheForce ,
+                                :TheImperialMarch ,
+                                :YodaTheme ;
+                      :hasProductionStudios <http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd.> ;
+                      :isDirectedBy :IrvinKershner ;
+                      :isProducedBy :GaryKurtz ;
+                      :isReleasedIn <http://www.semanticweb.org/ontologies/2021/SWOntology#1980> ;
+                      :isSetIn :Norway-Hardangerjokulen .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce
+:TheForce rdf:type owl:NamedIndividual ,
+                   :music ;
+          :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#TheForceAwakens
+:TheForceAwakens rdf:type owl:NamedIndividual ,
+                          :movie ;
+                 :belongsTo :SequelTrilogy ;
+                 :hasCast :AdamDriver ,
+                          :AndySerkis ,
+                          :AnthonyDaniels ,
+                          :BillieLourd ,
+                          :BrianHerring ,
+                          :CarrieFisher ,
+                          :DaisyRidley ,
+                          :DaveChapman ,
+                          :DomhnallGleeson ,
+                          :GwendolineChristie ,
+                          :HarrisonFord ,
+                          :JohnBoyega ,
+                          :KennyBaker ,
+                          :MarkHamill ,
+                          :MaxvonSydow ,
+                          :OscarIsaac ,
+                          :PeterMayhew ,
+                          <http://www.semanticweb.org/ontologies/2021/SWOntology#LupitaNyong'o> ;
+                 :hasCharacter :BB-8 ,
+                               :C-3PO ,
+                               :CaptainPhasma ,
+                               :Chewbecca ,
+                               :Finn ,
+                               :GeneralHux ,
+                               :HanSolo ,
+                               :KaydelKoConnix ,
+                               :KyloRen ,
+                               :LorSanTekka ,
+                               :LukeSkywalker ,
+                               :MazKanata ,
+                               :PoeDameron ,
+                               :PrincessLeia ,
+                               :R2-D2 ,
+                               :Rey ,
+                               :SupremeLeaderSnoke ;
+                 :hasMusic :HanSoloAndThePrincess ,
+                           :KyloRenFanfare ,
+                           :MarchOfTheResistance ,
+                           :PrincessLeiaTheme ,
+                           :RebelFanfare ,
+                           :ReyTheme ,
+                           :StarWarsMainTitle ,
+                           :TheForce ,
+                           :TheImperialMarch ;
+                 :hasProductionStudios :BadRobotProductions ,
+                                       <http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd.> ;
+                 :isDirectedBy :J.J.Abrams ;
+                 :isProducedBy :BryanBurk ,
+                               :J.J.Abrams ,
+                               :KathleenKennedy ;
+                 :isReleasedIn <http://www.semanticweb.org/ontologies/2021/SWOntology#2015> ;
+                 :isSetIn :Emirates-RubAlKhali ,
+                          :Iceland-Eyjafjallajokull ,
+                          :Ireland-SkelligMichael .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#TheForestBattle
+:TheForestBattle rdf:type owl:NamedIndividual ,
+                          :music ;
+                 :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#TheImperialMarch
+:TheImperialMarch rdf:type owl:NamedIndividual ,
+                           :music ;
+                  :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#TheLastJedi
+:TheLastJedi rdf:type owl:NamedIndividual ,
+                      :movie ;
+             :belongsTo :SequelTrilogy ;
+             :hasCast :AdamDriver ,
+                      :AndySerkis ,
+                      :AnthonyDaniels ,
+                      :BeniciodelToro ,
+                      :BillieLourd ,
+                      :BrianHerring ,
+                      :CarrieFisher ,
+                      :DaisyRidley ,
+                      :DaveChapman ,
+                      :DomhnallGleeson ,
+                      :GwendolineChristie ,
+                      :JimmyVee ,
+                      :JohnBoyega ,
+                      :JoonasSuotamo ,
+                      :KellyMarieTran ,
+                      :LauraDern ,
+                      :MarkHamill ,
+                      :OscarIsaac ,
+                      <http://www.semanticweb.org/ontologies/2021/SWOntology#LupitaNyong'o> ;
+             :hasCharacter :BB-8 ,
+                           :C-3PO ,
+                           :CaptainPhasma ,
+                           :Chewbecca ,
+                           :DJ ,
+                           :Finn ,
+                           :GeneralHux ,
+                           :KaydelKoConnix ,
+                           :KyloRen ,
+                           :LukeSkywalker ,
+                           :MazKanata ,
+                           :PoeDameron ,
+                           :PrincessLeia ,
+                           :R2-D2 ,
+                           :Rey ,
+                           :RoseTico ,
+                           :SupremeLeaderSnoke ,
+                           :Vice-AdmiralAmilynHoldo ;
+             :hasMusic :Ahch-ToIsland ,
+                       :EmperorTheme ,
+                       :HanSoloAndThePrincess ,
+                       :KyloRenFanfare ,
+                       :PrincessLeiaTheme ,
+                       :RebelFanfare ,
+                       :ReyTheme ,
+                       :StarWarsMainTitle ,
+                       :TheBattleOfCrait ,
+                       :TheForce ,
+                       :TheImperialMarch ,
+                       :YodaTheme ,
+                       <http://www.semanticweb.org/ontologies/2021/SWOntology#Luke&Leia> ;
+             :hasProductionStudios <http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd.> ;
+             :isDirectedBy :RiaJohnson ;
+             :isProducedBy :KathleenKennedy ,
+                           :RamBergman ;
+             :isReleasedIn <http://www.semanticweb.org/ontologies/2021/SWOntology#2017> ;
+             :isSetIn :Ireland-SkelligMichael .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#ThePhantomMenace
+:ThePhantomMenace rdf:type owl:NamedIndividual ,
+                           :movie ;
+                  :belongsTo :PrequelTrilogy ;
+                  :hasCast :AhmedBest ,
+                           :AnthonyDaniels ,
+                           :EwanMcGregor ,
+                           :FrankOz ,
+                           :IanMcDiarmid ,
+                           :JakeLloyd ,
+                           :KennyBaker ,
+                           :LiamNeeson ,
+                           :NataliePortman ,
+                           :PernillaAugust ,
+                           :RayPark ,
+                           :SamuelL.Jackson ,
+                           :SilasCarson ;
+                  :hasCharacter :AnakinSkywalker ,
+                                :C-3PO ,
+                                :DarthMaul ,
+                                :DarthSidious ,
+                                :JarJarBinks ,
+                                :MaceWindu ,
+                                :NuteGunray ,
+                                :Obi-WanKenobi ,
+                                :PadméAmidala ,
+                                :Qui-GonJinn ,
+                                :R2-D2 ,
+                                :ShmiSkywalker ,
+                                :Yoda ;
+                  :hasMusic :AnakinTheme ,
+                            :DroidInvasionMarch ,
+                            :DuelOfTheFates ,
+                            :EmperorTheme ,
+                            :RebelFanfare ,
+                            :StarWarsMainTitle ,
+                            :TheForce ,
+                            :TheImperialMarch ,
+                            :YodaTheme ;
+                  :hasProductionStudios <http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd.> ;
+                  :isDirectedBy :GeorgeLucas ;
+                  :isProducedBy :RickMcCallum ;
+                  :isSetIn :Italy-PalaceOfCaserta ,
+                           :Tunisia-KsarHadada .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#TheRiseOfSkywalker
+:TheRiseOfSkywalker rdf:type owl:NamedIndividual ,
+                             :movie ;
+                    :belongsTo :SequelTrilogy ;
+                    :hasCast :AdamDriver ,
+                             :AnthonyDaniels ,
+                             :BillieLourd ,
+                             :BillyDeeWilliams ,
+                             :BrianHerring ,
+                             :CarrieFisher ,
+                             :DaisyRidley ,
+                             :DaveChapman ,
+                             :DomhnallGleeson ,
+                             :HarrisonFord ,
+                             :HassanTaj ,
+                             :IanMcDiarmid ,
+                             :J.J.Abrams ,
+                             :JohnBoyega ,
+                             :JoonasSuotamo ,
+                             :KellyMarieTran ,
+                             :KeriRussel ,
+                             :LeeTowersey ,
+                             :MarkHamill ,
+                             :NaomiAckie ,
+                             :OscarIsaac ,
+                             :ShirleyHenderson ,
+                             <http://www.semanticweb.org/ontologies/2021/SWOntology#LupitaNyong'o> ;
+                    :hasCharacter :BB-8 ,
+                                  :BabuFrik ,
+                                  :C-3PO ,
+                                  :Chewbecca ,
+                                  :D-O ,
+                                  :DarthSidious ,
+                                  :Finn ,
+                                  :GeneralHux ,
+                                  :HanSolo ,
+                                  :Jannah ,
+                                  :KaydelKoConnix ,
+                                  :KyloRen ,
+                                  :LandoCalrissian ,
+                                  :LukeSkywalker ,
+                                  :MazKanata ,
+                                  :PoeDameron ,
+                                  :PrincessLeia ,
+                                  :R2-D2 ,
+                                  :Rey ,
+                                  :RoseTico ,
+                                  :ZoriiBliss ;
+                    :hasMusic :DarkSideTheme ,
+                              :EmperorTheme ,
+                              :HanSoloAndThePrincess ,
+                              :KyloRenFanfare ,
+                              :MarchOfTheResistance ,
+                              :PrincessLeiaTheme ,
+                              :RebelFanfare ,
+                              :ReyTheme ,
+                              :StarWarsMainTitle ,
+                              :TheForce ,
+                              :TheImperialMarch ,
+                              :TheRiseOfSkywalkerTheme ,
+                              :TheTrioTheme ,
+                              :YodaTheme ,
+                              <http://www.semanticweb.org/ontologies/2021/SWOntology#Luke&Leia> ;
+                    :hasProductionStudios :BadRobotProductions ,
+                                          <http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd.> ;
+                    :isDirectedBy :J.J.Abrams ;
+                    :isProducedBy :KathleenKennedy ,
+                                  :MichelleRejwan ;
+                    :isReleasedIn <http://www.semanticweb.org/ontologies/2021/SWOntology#2019> ;
+                    :isSetIn :Ireland-SkelligMichael .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#TheRiseOfSkywalkerTheme
+:TheRiseOfSkywalkerTheme rdf:type owl:NamedIndividual ,
+                                  :music ;
+                         :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#TheThroneRoom
+:TheThroneRoom rdf:type owl:NamedIndividual ,
+                        :music ;
+               :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#TheTrioTheme
+:TheTrioTheme rdf:type owl:NamedIndividual ,
+                       :music ;
+              :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#ThomasDeclanMulholland
+:ThomasDeclanMulholland rdf:type owl:NamedIndividual ,
+                                 :actor ,
+                                 :dead ;
+                        :plays :JabbaTheHut .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Tunisia-KsarHadada
+:Tunisia-KsarHadada rdf:type owl:NamedIndividual ,
+                             :real ;
+                    :stages :Tatooine .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#USA-DeathValley
+:USA-DeathValley rdf:type owl:NamedIndividual ,
+                          :real ;
+                 :stages :TatooineDesert .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#USA-DelNorteCounty
+:USA-DelNorteCounty rdf:type owl:NamedIndividual ,
+                             :real ;
+                    :stages :Endor .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Vice-AdmiralAmilynHoldo
+:Vice-AdmiralAmilynHoldo rdf:type owl:NamedIndividual ,
+                                  :character ,
+                                  :human ,
+                                  :rebelAlliance ;
+                         :isFriendOf :PrincessLeia .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda
+:Yoda rdf:type owl:NamedIndividual ,
+               :alien ,
+               :character ,
+               :rebelAlliance ;
+      :isMentorOf :CountDooku ,
+                  :LukeSkywalker .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#YodaTheme
+:YodaTheme rdf:type owl:NamedIndividual ,
+                    :music ;
+           :isComposedBy :JohnWilliams .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#ZoriiBliss
+:ZoriiBliss rdf:type owl:NamedIndividual ,
+                     :character ,
+                     :human ,
+                     :rebelAlliance ;
+            :isFriendOf :PoeDameron .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#1977
+<http://www.semanticweb.org/ontologies/2021/SWOntology#1977> rdf:type owl:NamedIndividual ,
+                                                                      :year .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#1980
+<http://www.semanticweb.org/ontologies/2021/SWOntology#1980> rdf:type owl:NamedIndividual ,
+                                                                      :year .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#1983
+<http://www.semanticweb.org/ontologies/2021/SWOntology#1983> rdf:type owl:NamedIndividual ,
+                                                                      :year .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#1999
+<http://www.semanticweb.org/ontologies/2021/SWOntology#1999> rdf:type owl:NamedIndividual ,
+                                                                      :year .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#2002
+<http://www.semanticweb.org/ontologies/2021/SWOntology#2002> rdf:type owl:NamedIndividual ,
+                                                                      :year .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#2005
+<http://www.semanticweb.org/ontologies/2021/SWOntology#2005> rdf:type owl:NamedIndividual ,
+                                                                      :year .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#2015
+<http://www.semanticweb.org/ontologies/2021/SWOntology#2015> rdf:type owl:NamedIndividual ,
+                                                                      :year .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#2017
+<http://www.semanticweb.org/ontologies/2021/SWOntology#2017> rdf:type owl:NamedIndividual ,
+                                                                      :year ;
+                                                             :isReleasedIn <http://www.semanticweb.org/ontologies/2021/SWOntology#1999> .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#2019
+<http://www.semanticweb.org/ontologies/2021/SWOntology#2019> rdf:type owl:NamedIndividual ,
+                                                                      :year .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#Luke&Leia
+<http://www.semanticweb.org/ontologies/2021/SWOntology#Luke&Leia> rdf:type owl:NamedIndividual ,
+                                                                           :music .
+
+
+###  http://www.semanticweb.org/ontologies/2021/SWOntology#LupitaNyong'o
+<http://www.semanticweb.org/ontologies/2021/SWOntology#LupitaNyong'o> rdf:type owl:NamedIndividual ,
+                                                                               :actor ,
+                                                                               :alive ;
+                                                                      :plays :MazKanata .
+
+
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

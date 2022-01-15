@@ -1,0 +1,3083 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2021/SWOntology#"
+     xml:base="http://www.semanticweb.org/ontologies/2021/SWOntology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:SWOntology="http://www.semanticweb.org/ontologies/2021/SWOntology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology">
+        <vann:preferredNamespacePrefix>swo</vann:preferredNamespacePrefix>
+        <rdfs:comment>This ontology is dedicated to the Star Wars franchise and it was created by Susanna Pinotti and Valentina Cozzi, two Digital Humanities and Digital Knowledge students at the university of Bologna.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#belongsTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#belongsTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#trilogy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#composedOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#composedOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#trilogy"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#composes -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#composes">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#composer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#directs -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#directs">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#isDirectedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#director"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#hasCast -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#hasCast">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#hasCharacter -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#hasCharacter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#hasGenre -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#hasGenre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#starwars"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#hasMusic -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#hasMusic">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#hasProductionStudios -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#hasProductionStudios">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#studios"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#hasRomanticRelationWith -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#hasRomanticRelationWith">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#hasTitle -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#hasTitle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#title"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#isApprenticeOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#isApprenticeOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#isMentorOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#isChildOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#isChildOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#isParentOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#isComposedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#composer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#isDirectedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#isDirectedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#director"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#isEnemyOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#isEnemyOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#isFriendOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#isGrandChildOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#isGrandChildOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#isGrandParentOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#isGrandParentOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#isGrandParentOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#isMentorOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#isMentorOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#isNephewOrNieceOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#isNephewOrNieceOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#isUncleOrAuntOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#isParentOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#isParentOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#isProducedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#isProducedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#produces"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#producer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#isReleasedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#isReleasedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#year"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#isSetIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#isSetIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#isSiblingOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#isSiblingOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#isUncleOrAuntOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#isUncleOrAuntOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#plays -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#plays">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#produces -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#produces">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#producer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#stages -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#stages">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#real"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#fictional"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#voices -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#voices">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#starwars"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#genre"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/vocab/vann/releaseYear -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/vocab/vann/releaseYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#year"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#gen -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#gen">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#genre"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#actor -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#actor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#cast"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#alien -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#alien">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#machine"/>
+        <rdfs:comment>Characters that are under the category &quot;alien&quot;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#alive -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#alive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#cast -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#cast">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#character -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#character">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+        <rdfs:comment>The most significant characters in every movie</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#composer -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#composer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#other"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <rdfs:comment>Characters that believe in the Dark Side cause.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#dead -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#dead">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdfs:comment>Actors who have passed</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#director -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#fictional -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#fictional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#place"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#real"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#genre -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#genre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#starwars"/>
+        <rdfs:comment>The genre of the movies</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#human -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#human">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#machine"/>
+        <rdfs:comment>Characters that are human</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#machine -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#machine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdfs:comment>Characters that are machines</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#movie -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#movie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#trilogy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#music -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#music">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+        <rdfs:comment>Star Wars main soundtracks</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#other -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#other">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <rdfs:comment>Characters that are neutral</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#place -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#place">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#producer -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#producer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#real -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#real">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdfs:comment>Characters that believe in the Light Side cause.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#starwars -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#starwars">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Star Wars is an American science fiction franchise created by George Lucas, which began with the eponymous 1977 film and quickly became a worldwide pop-culture phenomenon.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#studios -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#studios">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#title -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#title">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#trilogy -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#trilogy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#starwars"/>
+        <rdfs:comment>The original film (Star Wars), retroactively subtitled Episode IV: A New Hope (1977), was followed by the sequels Episode V: The Empire Strikes Back (1980) and Episode VI: Return of the Jedi (1983), forming the original Star Wars trilogy. Lucas later returned to filmmaking to direct a prequel trilogy, consisting of Episode I: The Phantom Menace (1999), Episode II: Attack of the Clones (2002), and Episode III: Revenge of the Sith (2005). In 2012, Lucas sold his production company to Disney, relinquishing his ownership of the franchise. This led to a sequel trilogy, consisting of Episode VII: The Force Awakens (2015), Episode VIII: The Last Jedi (2017), and Episode IX: The Rise of Skywalker (2019).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#year -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#year">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#ANewHope -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ANewHope">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#OriginalTrilogy"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AlecGuinness"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AnthonyDaniels"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#CarrieFisher"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DavidProwse"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HarrisonFord"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KennyBaker"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MarkHamill"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PeterMayhew"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthVader"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeiaTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RebelVictory"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheThroneRoom"/>
+        <hasProductionStudios rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."/>
+        <isDirectedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#GeorgeLucas"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#GaryKurtz"/>
+        <isReleasedIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#1977"/>
+        <isSetIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#USA-DeathValley"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#AcrossTheStars -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#AcrossTheStars">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#AdamDriver -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#AdamDriver">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Ahch-To -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Ahch-To">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#fictional"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Ahch-ToIsland -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Ahch-ToIsland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#AhmedBest -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#AhmedBest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JarJarBinks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Alderaan -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Alderaan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#fictional"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#AlecGuinness -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#AlecGuinness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#dead"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinSkywalker -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinSkywalker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <hasRomanticRelationWith rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PadméAmidala"/>
+        <isApprenticeOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"/>
+        <isGrandParentOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"/>
+        <isParentOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"/>
+        <isParentOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinTheme -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinTheme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#AndySerkis -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#AndySerkis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#SupremeLeaderSnoke"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#AnthonyDaniels -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#AnthonyDaniels">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#AttackOfTheClones -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#AttackOfTheClones">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrequelTrilogy"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AhmedBest"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AnthonyDaniels"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#ChristopherLee"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DanielLogan"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#ErnieFosselius"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#EwanMcGregor"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#FrankOz"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HaydenChristensen"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#IanMcDiarmid"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KennyBaker"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#NataliePortman"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PernillaAugust"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#SamuelL.Jackson"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#SilasCarson"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TemueraMorrison"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinSkywalker"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BobaFett"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#CountDooku"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthSidious"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JangoFett"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JarJarBinks"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MaceWindu"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#NuteGunray"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PadméAmidala"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PoggleTheLesser"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#ShmiSkywalker"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AcrossTheStars"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DroidInvasionMarch"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DuelOfTheFates"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#EmperorTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheImperialMarch"/>
+        <hasProductionStudios rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."/>
+        <isDirectedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#GeorgeLucas"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RickMcCallum"/>
+        <isReleasedIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#2002"/>
+        <isSetIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-PalaceOfCaserta"/>
+        <isSetIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-VillaDelBalbianello"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#BB-8 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#BB-8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#machine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Finn"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PoeDameron"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Rey"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#BabuFrik -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#BabuFrik">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alien"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#BadRobotProductions -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#BadRobotProductions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#studios"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#BattleOfTheHeroes -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#BattleOfTheHeroes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#BeniciodelToro -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#BeniciodelToro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DJ"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#BillieLourd -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#BillieLourd">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <isChildOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#CarrieFisher"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KaydelKoConnix"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#BillyDeeWilliams -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#BillyDeeWilliams">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LandoCalrissian"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#BobaFett -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#BobaFett">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#other"/>
+        <isEnemyOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#BrianHerring -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#BrianHerring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BB-8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#BryanBurk -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#BryanBurk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#producer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#machine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#CantinaBand -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#CantinaBand">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#CaptainPhasma -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#CaptainPhasma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <isEnemyOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Finn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#CarrieFisher -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#CarrieFisher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#dead"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alien"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Finn"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MazKanata"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Rey"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#ChristopherLee -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ChristopherLee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#dead"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#CountDooku"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#CountDooku -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#CountDooku">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <isApprenticeOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthSidious"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#D-O -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#D-O">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#machine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#DJ -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#DJ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#other"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#DaisyRidley -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#DaisyRidley">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Rey"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#DanielLogan -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#DanielLogan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BobaFett"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#DarkSideTheme -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#DarkSideTheme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#DarthMaul -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthMaul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alien"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide"/>
+        <isApprenticeOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthSidious"/>
+        <isEnemyOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"/>
+        <isEnemyOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Qui-GonJinn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#DarthSidious -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthSidious">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <isGrandParentOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Rey"/>
+        <isMentorOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthVader"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#DarthVader -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthVader">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <isChildOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#ShmiSkywalker"/>
+        <isGrandParentOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"/>
+        <isParentOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"/>
+        <isParentOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#DaveChapman -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#DaveChapman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BB-8"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#DavidProwse -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#DavidProwse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#dead"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthVader"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#DomhnallGleeson -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#DomhnallGleeson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#GeneralHux"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#DroidInvasionMarch -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#DroidInvasionMarch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#DuelOfTheFates -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#DuelOfTheFates">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Emirates-RubAlKhali -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Emirates-RubAlKhali">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#real"/>
+        <stages rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Jakku"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#EmperorTheme -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#EmperorTheme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Endor -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Endor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#fictional"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#ErnieFosselius -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ErnieFosselius">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <voices rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PoggleTheLesser"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#EwanMcGregor -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#EwanMcGregor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Finn -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Finn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PoeDameron"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Rey"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#FrankOz -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#FrankOz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <voices rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#GaryKurtz -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#GaryKurtz">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#producer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#GeneralGrievous -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#GeneralGrievous">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#machine"/>
+        <isApprenticeOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthSidious"/>
+        <isEnemyOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#GeneralHux -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#GeneralHux">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <isEnemyOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#GeorgeLucas -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#GeorgeLucas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#director"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#GwendolineChristie -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#GwendolineChristie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#CaptainPhasma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <hasRomanticRelationWith rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LandoCalrissian"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MazKanata"/>
+        <isParentOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#HanSoloAndThePrincess -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSoloAndThePrincess">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#HarrisonFord -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#HarrisonFord">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#HassanTaj -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#HassanTaj">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#HaydenChristensen -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#HaydenChristensen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinSkywalker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Hoth -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Hoth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#fictional"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#HowardKazanjian -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#HowardKazanjian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#producer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#IanMcDiarmid -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#IanMcDiarmid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthSidious"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Iceland-Eyjafjallajokull -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Iceland-Eyjafjallajokull">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#real"/>
+        <stages rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#StarkillerBase"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Ireland-SkelligMichael -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Ireland-SkelligMichael">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#real"/>
+        <stages rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Ahch-To"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#IrvinKershner -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#IrvinKershner">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#director"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-MountEtna -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-MountEtna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#real"/>
+        <stages rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Mustafar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-PalaceOfCaserta -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-PalaceOfCaserta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#real"/>
+        <stages rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#NabooRoyalPalace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-VillaDelBalbianello -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-VillaDelBalbianello">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#real"/>
+        <stages rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#NabooLakeSide"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#J.J.Abrams -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#J.J.Abrams">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#director"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#producer"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#D-O"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#JabbaTheHut -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#JabbaTheHut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alien"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#other"/>
+        <isEnemyOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BobaFett"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#JakeLloyd -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#JakeLloyd">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinSkywalker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Jakku -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Jakku">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#fictional"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#JangoFett -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#JangoFett">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#other"/>
+        <isEnemyOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"/>
+        <isParentOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BobaFett"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Jannah -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Jannah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Finn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#JarJarBinks -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#JarJarBinks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alien"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PadméAmidala"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Qui-GonJinn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#JeremyBulloch -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#JeremyBulloch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#dead"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BobaFett"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#JimmyVee -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#JimmyVee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#JohnBoyega -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnBoyega">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Finn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#composer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#JoonasSuotamo -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#JoonasSuotamo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#KathleenKennedy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#KathleenKennedy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#producer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#KaydelKoConnix -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#KaydelKoConnix">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#KellyMarieTran -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#KellyMarieTran">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RoseTico"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#KennyBaker -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#KennyBaker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#dead"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#KeriRussel -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#KeriRussel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#ZoriiBliss"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <isNephewOrNieceOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRenFanfare -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRenFanfare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#LandoCalrissian -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#LandoCalrissian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#LauraDern -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#LauraDern">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Vice-AdmiralAmilynHoldo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#LeeTowersey -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#LeeTowersey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#LiamNeeson -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#LiamNeeson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Qui-GonJinn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#LorSanTekka -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#LorSanTekka">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PoeDameron"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd. -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#studios"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <isApprenticeOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"/>
+        <isApprenticeOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"/>
+        <isChildOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthVader"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"/>
+        <isMentorOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"/>
+        <isMentorOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Rey"/>
+        <isSiblingOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#LukeTheme -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#LukeTheme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#MaceWindu -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#MaceWindu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Qui-GonJinn"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#MarchOfTheResistance -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#MarchOfTheResistance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#MarkHamill -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#MarkHamill">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#MatthewWood -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#MatthewWood">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#GeneralGrievous"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#MaxvonSydow -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#MaxvonSydow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#dead"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#MazKanata -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#MazKanata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alien"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#MichelleRejwan -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#MichelleRejwan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#producer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Mustafar -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Mustafar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#fictional"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#NabooLakeSide -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#NabooLakeSide">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#fictional"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#NabooRoyalPalace -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#NabooRoyalPalace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#fictional"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#NaomiAckie -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#NaomiAckie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Jannah"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#NataliePortman -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#NataliePortman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PadméAmidala"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Norway-Hardangerjokulen -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Norway-Hardangerjokulen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#real"/>
+        <stages rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Hoth"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#NuteGunray -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#NuteGunray">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alien"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#other"/>
+        <isEnemyOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PadméAmidala"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"/>
+        <isMentorOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#OriginalTrilogy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#OriginalTrilogy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#trilogy"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#ANewHope"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#ReturnOfTheJedi"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheEmpireStrikesBack"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#OscarIsaac -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#OscarIsaac">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PoeDameron"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#PadméAmidala -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#PadméAmidala">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <isGrandParentOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"/>
+        <isParentOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"/>
+        <isParentOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#ParadeOfTheEwoks -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ParadeOfTheEwoks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#PernillaAugust -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#PernillaAugust">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#ShmiSkywalker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#PeterMayhew -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#PeterMayhew">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#dead"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#PoeDameron -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#PoeDameron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#PoggleTheLesser -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#PoggleTheLesser">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alien"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#other"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#NuteGunray"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#PrequelTrilogy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#PrequelTrilogy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#trilogy"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AttackOfTheClones"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RevengeOfTheSith"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#ThePhantomMenace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <isParentOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"/>
+        <isSiblingOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeiaTheme -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeiaTheme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Qui-GonJinn -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Qui-GonJinn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"/>
+        <isMentorOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#machine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BB-8"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#RamBergman -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#RamBergman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#producer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#RayPark -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#RayPark">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthMaul"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#RebelVictory -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#RebelVictory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#ReturnOfTheJedi -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ReturnOfTheJedi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#OriginalTrilogy"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AlecGuinness"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AnthonyDaniels"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BillyDeeWilliams"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#CarrieFisher"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DavidProwse"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#FrankOz"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HarrisonFord"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#IanMcDiarmid"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JeremyBulloch"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KennyBaker"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MarkHamill"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PeterMayhew"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#SebastianShaw"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#ThomasDeclanMulholland"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BobaFett"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthSidious"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthVader"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JabbaTheHut"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LandoCalrissian"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#EmperorTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSoloAndThePrincess"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#ParadeOfTheEwoks"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeiaTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheForestBattle"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheImperialMarch"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#YodaTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Luke&amp;Leia"/>
+        <hasProductionStudios rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."/>
+        <isDirectedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RichardMarquand"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HowardKazanjian"/>
+        <isReleasedIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#1983"/>
+        <isSetIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#USA-DelNorteCounty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#RevengeOfTheSith -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#RevengeOfTheSith">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrequelTrilogy"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AhmedBest"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AnthonyDaniels"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#ChristopherLee"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#ErnieFosselius"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#EwanMcGregor"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#FrankOz"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HaydenChristensen"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#IanMcDiarmid"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KennyBaker"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MatthewWood"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#NataliePortman"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#SamuelL.Jackson"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#SilasCarson"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinSkywalker"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#CountDooku"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthSidious"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#GeneralGrievous"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JarJarBinks"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MaceWindu"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#NuteGunray"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PadméAmidala"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PoggleTheLesser"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AcrossTheStars"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BattleOfTheHeroes"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarkSideTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DroidInvasionMarch"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DuelOfTheFates"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#EmperorTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeiaTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheImperialMarch"/>
+        <hasProductionStudios rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."/>
+        <isDirectedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#GeorgeLucas"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RickMcCallum"/>
+        <isReleasedIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#2005"/>
+        <isSetIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-MountEtna"/>
+        <isSetIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Switzerland-Grindelwald"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Rey -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Rey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <hasRomanticRelationWith rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#ReyTheme -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ReyTheme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#RiaJohnson -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#RiaJohnson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#director"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#RichardMarquand -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#RichardMarquand">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#director"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#RickMcCallum -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#RickMcCallum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#producer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#RoseTico -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#RoseTico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Finn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#SamuelL.Jackson -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#SamuelL.Jackson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MaceWindu"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#ScienceFiction -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ScienceFiction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#SebastianShaw -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#SebastianShaw">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#dead"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthVader"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#SequelTrilogy -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#SequelTrilogy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#trilogy"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheForceAwakens"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheLastJedi"/>
+        <composedOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheRiseOfSkywalker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#ShirleyHenderson -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ShirleyHenderson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <voices rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BabuFrik"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#ShmiSkywalker -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ShmiSkywalker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <isGrandParentOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"/>
+        <isGrandParentOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
+        <isParentOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinSkywalker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#SilasCarson -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#SilasCarson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#NuteGunray"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#StarkillerBase -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#StarkillerBase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#fictional"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#SupremeLeaderSnoke -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#SupremeLeaderSnoke">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alien"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#darkSide"/>
+        <isEnemyOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Rey"/>
+        <isMentorOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Switzerland-Grindelwald -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Switzerland-Grindelwald">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#real"/>
+        <stages rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Alderaan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Tatooine -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Tatooine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#fictional"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#TatooineDesert -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TatooineDesert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#fictional"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#TemueraMorrison -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TemueraMorrison">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JangoFett"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#TheAsteroidField -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheAsteroidField">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#TheBattleOfCrait -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheBattleOfCrait">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#TheEmpireStrikesBack -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheEmpireStrikesBack">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#OriginalTrilogy"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AlecGuinness"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AnthonyDaniels"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BillyDeeWilliams"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#CarrieFisher"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DavidProwse"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#FrankOz"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HarrisonFord"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#IanMcDiarmid"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JeremyBulloch"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KennyBaker"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MarkHamill"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PeterMayhew"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BobaFett"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthSidious"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthVader"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LandoCalrissian"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarkSideTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSoloAndThePrincess"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeiaTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RebelVictory"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheAsteroidField"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheImperialMarch"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#YodaTheme"/>
+        <hasProductionStudios rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."/>
+        <isDirectedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#IrvinKershner"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#GaryKurtz"/>
+        <isReleasedIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#1980"/>
+        <isSetIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Norway-Hardangerjokulen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#TheForceAwakens -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheForceAwakens">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#SequelTrilogy"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AdamDriver"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AndySerkis"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AnthonyDaniels"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BillieLourd"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BrianHerring"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#CarrieFisher"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DaisyRidley"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DaveChapman"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DomhnallGleeson"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#GwendolineChristie"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HarrisonFord"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnBoyega"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KennyBaker"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MarkHamill"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MaxvonSydow"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#OscarIsaac"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PeterMayhew"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LupitaNyong&apos;o"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BB-8"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#CaptainPhasma"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Finn"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#GeneralHux"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KaydelKoConnix"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LorSanTekka"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MazKanata"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PoeDameron"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Rey"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#SupremeLeaderSnoke"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSoloAndThePrincess"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRenFanfare"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MarchOfTheResistance"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeiaTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#ReyTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheImperialMarch"/>
+        <hasProductionStudios rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BadRobotProductions"/>
+        <hasProductionStudios rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."/>
+        <isDirectedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#J.J.Abrams"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BryanBurk"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#J.J.Abrams"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KathleenKennedy"/>
+        <isReleasedIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#2015"/>
+        <isSetIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Emirates-RubAlKhali"/>
+        <isSetIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Iceland-Eyjafjallajokull"/>
+        <isSetIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Ireland-SkelligMichael"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#TheForestBattle -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheForestBattle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#TheImperialMarch -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheImperialMarch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#TheLastJedi -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheLastJedi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#SequelTrilogy"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AdamDriver"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AndySerkis"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AnthonyDaniels"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BeniciodelToro"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BillieLourd"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BrianHerring"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#CarrieFisher"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DaisyRidley"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DaveChapman"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DomhnallGleeson"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#GwendolineChristie"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JimmyVee"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnBoyega"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JoonasSuotamo"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KellyMarieTran"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LauraDern"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MarkHamill"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#OscarIsaac"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LupitaNyong&apos;o"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BB-8"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#CaptainPhasma"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DJ"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Finn"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#GeneralHux"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KaydelKoConnix"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MazKanata"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PoeDameron"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Rey"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RoseTico"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#SupremeLeaderSnoke"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Vice-AdmiralAmilynHoldo"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Ahch-ToIsland"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#EmperorTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSoloAndThePrincess"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRenFanfare"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeiaTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#ReyTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheBattleOfCrait"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheImperialMarch"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#YodaTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Luke&amp;Leia"/>
+        <hasProductionStudios rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."/>
+        <isDirectedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RiaJohnson"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KathleenKennedy"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RamBergman"/>
+        <isReleasedIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#2017"/>
+        <isSetIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Ireland-SkelligMichael"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#ThePhantomMenace -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ThePhantomMenace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrequelTrilogy"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AhmedBest"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AnthonyDaniels"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#EwanMcGregor"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#FrankOz"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#IanMcDiarmid"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JakeLloyd"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KennyBaker"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LiamNeeson"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#NataliePortman"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PernillaAugust"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RayPark"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#SamuelL.Jackson"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#SilasCarson"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinSkywalker"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthMaul"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthSidious"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JarJarBinks"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MaceWindu"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#NuteGunray"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Obi-WanKenobi"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PadméAmidala"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Qui-GonJinn"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#ShmiSkywalker"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AnakinTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DroidInvasionMarch"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DuelOfTheFates"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#EmperorTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheImperialMarch"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#YodaTheme"/>
+        <hasProductionStudios rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."/>
+        <isDirectedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#GeorgeLucas"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RickMcCallum"/>
+        <isSetIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Italy-PalaceOfCaserta"/>
+        <isSetIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Tunisia-KsarHadada"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#TheRiseOfSkywalker -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheRiseOfSkywalker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#movie"/>
+        <belongsTo rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#SequelTrilogy"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AdamDriver"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#AnthonyDaniels"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BillieLourd"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BillyDeeWilliams"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BrianHerring"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#CarrieFisher"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DaisyRidley"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DaveChapman"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DomhnallGleeson"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HarrisonFord"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HassanTaj"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#IanMcDiarmid"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#J.J.Abrams"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnBoyega"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JoonasSuotamo"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KellyMarieTran"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KeriRussel"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LeeTowersey"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MarkHamill"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#NaomiAckie"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#OscarIsaac"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#ShirleyHenderson"/>
+        <hasCast rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LupitaNyong&apos;o"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BB-8"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BabuFrik"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#C-3PO"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Chewbecca"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#D-O"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarthSidious"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Finn"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#GeneralHux"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSolo"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Jannah"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KaydelKoConnix"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRen"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LandoCalrissian"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MazKanata"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PoeDameron"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#R2-D2"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Rey"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RoseTico"/>
+        <hasCharacter rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#ZoriiBliss"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#DarkSideTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#EmperorTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#HanSoloAndThePrincess"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KyloRenFanfare"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MarchOfTheResistance"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeiaTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#RebelFanfare"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#ReyTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#StarWarsMainTitle"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheForce"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheImperialMarch"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheRiseOfSkywalkerTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TheTrioTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#YodaTheme"/>
+        <hasMusic rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Luke&amp;Leia"/>
+        <hasProductionStudios rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#BadRobotProductions"/>
+        <hasProductionStudios rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LucasfilmLtd."/>
+        <isDirectedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#J.J.Abrams"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#KathleenKennedy"/>
+        <isProducedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MichelleRejwan"/>
+        <isReleasedIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#2019"/>
+        <isSetIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Ireland-SkelligMichael"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#TheRiseOfSkywalkerTheme -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheRiseOfSkywalkerTheme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#TheThroneRoom -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheThroneRoom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#TheTrioTheme -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#TheTrioTheme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#ThomasDeclanMulholland -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ThomasDeclanMulholland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#dead"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JabbaTheHut"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Tunisia-KsarHadada -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Tunisia-KsarHadada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#real"/>
+        <stages rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Tatooine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#USA-DeathValley -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#USA-DeathValley">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#real"/>
+        <stages rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#TatooineDesert"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#USA-DelNorteCounty -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#USA-DelNorteCounty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#real"/>
+        <stages rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#Endor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Vice-AdmiralAmilynHoldo -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Vice-AdmiralAmilynHoldo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PrincessLeia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Yoda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alien"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <isMentorOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#CountDooku"/>
+        <isMentorOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#LukeSkywalker"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#YodaTheme -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#YodaTheme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+        <isComposedBy rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#JohnWilliams"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#ZoriiBliss -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#ZoriiBliss">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#character"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#human"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#rebelAlliance"/>
+        <isFriendOf rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#PoeDameron"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#1977 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#1977">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#year"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#1980 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#1980">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#year"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#1983 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#1983">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#year"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#1999 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#1999">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#year"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#2002 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#2002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#year"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#2005 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#2005">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#year"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#2015 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#2015">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#year"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#2017 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#2017">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#year"/>
+        <isReleasedIn rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#1999"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#2019 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#2019">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#year"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#Luke&amp;Leia -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#Luke&amp;Leia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#music"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2021/SWOntology#LupitaNyong&apos;o -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2021/SWOntology#LupitaNyong&apos;o">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#actor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#alive"/>
+        <plays rdf:resource="http://www.semanticweb.org/ontologies/2021/SWOntology#MazKanata"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+
